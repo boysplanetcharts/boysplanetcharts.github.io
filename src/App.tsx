@@ -59,10 +59,9 @@ function App() {
               alignItems: "center",
             }}
           >
-            <div style={{ padding: 24, width: "20%" }}>
+            <div style={{ margin: 24 }}>
               <img
-                style={{ borderRadius: 10 }}
-                width={"100%"}
+                style={{ borderRadius: 10, width: isMobileOrTablet ? "5rem" : "12rem" }}
                 src={getImageUrl(currentTrainee.id)}
               />
             </div>
