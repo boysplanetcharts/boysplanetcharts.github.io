@@ -3,6 +3,7 @@ export interface ITraineeInfo {
     group: string;
     ep1: number;
     ep2: number;
+    ep3: number;
     company: string;
     dob: number;
     id: number;
