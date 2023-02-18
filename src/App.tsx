@@ -5,6 +5,10 @@ import { ITraineeInfo } from "./types";
 import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
 
+function getImageUrl(traineeId: number) {
+  return new URL(`./assets/trainees/${traineeId}.png`, import.meta.url).href;
+}
+
 function App() {
   const { width, height, isMobileOrTablet } = useWindowDimensions();
 
@@ -48,8 +52,71 @@ function App() {
               currentTrainee?.ep3,
             ]}
           />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            <div style={{ padding: 24, width: "20%" }}>
+              <img
+                style={{ borderRadius: 10 }}
+                width={"100%"}
+                src={getImageUrl(currentTrainee.id)}
+              />
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginLeft: 24,
+              }}
+            >
+              <div
+                style={{
+                  flexDirection: "row",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <p style={{ fontWeight: "bold", margin: 0, padding: 0 }}>
+                  {currentTrainee.name}
+                </p>
+                <div
+                  style={{
+                    height: 32,
+                    width: 32,
+                    backgroundColor:
+                      currentTrainee.group === "G" ? "#dc7cb0" : "#7fcaeb",
+                    display: "flex",
+                    borderRadius: 25,
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "white",
+                    margin: 8,
+                  }}
+                >
+                  <p>{currentTrainee.group}</p>
+                </div>
+              </div>
+              <p>{currentTrainee.phrase}</p>
+              <p>{currentTrainee.dob}</p>
+              <p>{currentTrainee.height}</p>
+              <p>Hobby: {currentTrainee.hobby}</p>
+              <p>Specialty: {currentTrainee.good_at}</p>
+            </div>
+          </div>
         </div>
-        <div style={{flex: 1, overflowX: "auto", overflowY: "scroll", maxHeight: 400, padding: 20}}>
+        <div
+          style={{
+            flex: 1,
+            overflowX: "auto",
+            overflowY: "scroll",
+            maxHeight: 400,
+            padding: 20,
+          }}
+        >
           <table>
             <h1>Trainees</h1>
             <tbody>
