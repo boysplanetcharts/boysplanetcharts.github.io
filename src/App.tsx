@@ -6,7 +6,7 @@ import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
 
 function getImageUrl(traineeId: number) {
-  return new URL(`./assets/trainees/${traineeId}.png`, import.meta.url).href;
+  return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url).href;
 }
 
 function App() {
