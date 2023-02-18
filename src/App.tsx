@@ -49,7 +49,7 @@ function App() {
             ]}
           />
         </div>
-        <div style={{flex: 1, overflowX: "scroll"}}>
+        <div style={{flex: 1, overflowX: "auto", overflowY: "scroll", maxHeight: 400, padding: 20}}>
           <table>
             <h1>Trainees</h1>
             <tbody>
