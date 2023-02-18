@@ -53,7 +53,7 @@ export const RankingChart = ({ rankings }: IRankingChartData) => {
           dataKey="ranking"
           stroke="#fb9fcb"
           strokeWidth={5}
-          dot={<CustomizedDot />}
+          dot={CustomizedDot}
         />
       </LineChart>
     </ResponsiveContainer>
