@@ -12,3 +12,7 @@ export interface ITraineeInfo {
     good_at: string;
     phrase: string;
 }
+
+export interface ITraineeInfoWithImage extends ITraineeInfo {
+    image: string;
+}

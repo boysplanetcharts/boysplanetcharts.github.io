@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { traineesData } from "../trainee-data";
 import { RankingChart } from "./components/ranking-chart";
-import { ITraineeInfo } from "./types";
+import { ITraineeInfo, ITraineeInfoWithImage } from "./types";
 import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
 
@@ -10,16 +10,29 @@ function getImageUrl(traineeId: number) {
 }
 
 function App() {
-  const { width, height, isMobileOrTablet } = useWindowDimensions();
+  const { isMobileOrTablet } = useWindowDimensions();
 
-  const traineesSortedByMostRecentRank = traineesData.sort(
-    (item1, item2) => item1.ep2 - item2.ep2
+  const addImgToTraineeArray = (trainees: ITraineeInfo[]) => {
+    return trainees.map((trainee) => ({
+      ...trainee,
+      image: getImageUrl(trainee.id),
+    }));
+  };
+
+  const traineesSortedByMostRecentRank = useMemo(
+    () => traineesData.sort((item1, item2) => item1.ep2 - item2.ep2),
+    [traineesData]
   );
 
-  const [count, setCount] = useState(0);
-  const [currentTrainee, setCurrentTrainee] = useState<ITraineeInfo>(
-    traineesSortedByMostRecentRank[0]
+  const traineesWithImage: ITraineeInfoWithImage[] = useMemo(
+    () => addImgToTraineeArray(traineesSortedByMostRecentRank),
+    [traineesSortedByMostRecentRank]
   );
+
+  const [currentTrainee, setCurrentTrainee] = useState<ITraineeInfoWithImage>(
+    traineesWithImage[0]
+  );
+  
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -33,7 +46,7 @@ function App() {
           width: "100%",
         }}
       >
-        <img style={{ height: "75%" }} src={bpLogo} />
+        <img key={currentTrainee.id} style={{ height: "75%" }} src={bpLogo} />
       </div>
       <div
         style={{
@@ -61,8 +74,11 @@ function App() {
           >
             <div style={{ margin: 24 }}>
               <img
-                style={{ borderRadius: 10, width: isMobileOrTablet ? "5rem" : "12rem" }}
-                src={getImageUrl(currentTrainee.id)}
+                style={{
+                  borderRadius: 10,
+                  width: isMobileOrTablet ? "5rem" : "12rem",
+                }}
+                src={currentTrainee.image}
               />
             </div>
             <div
@@ -127,8 +143,8 @@ function App() {
                 <th>EP2</th>
                 <th>EP3</th>
               </tr>
-              {traineesSortedByMostRecentRank.map((item, index) => (
-                <tr onMouseEnter={() => setCurrentTrainee(item)} key={index}>
+              {traineesWithImage.map((item) => (
+                <tr onMouseEnter={() => setCurrentTrainee(item)} key={item.id}>
                   <td>{item.name}</td>
                   <td>{item.group}</td>
                   <td>{item.company}</td>

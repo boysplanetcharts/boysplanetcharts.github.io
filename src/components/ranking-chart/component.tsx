@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Line,
   LineChart,
@@ -13,30 +14,29 @@ interface ICustomizedDot {
   cx: number;
   cy: number;
   value: number;
+  key: string;
 }
 
-const CustomizedDot = ({ cx, cy, value }: ICustomizedDot) => {
+const CustomizedDot = ({ cx, cy, value, key }: ICustomizedDot) => {
   return (
-    <>
+    <React.Fragment key={key}>
       <circle cx={cx} cy={cy} r={15} fill="#fb9fcb" />
       <text fill="#fff" textAnchor="middle" x={cx} y={cy + 5}>
         {value}
       </text>
-    </>
+    </React.Fragment>
   );
 };
 
 export const RankingChart = ({ rankings }: IRankingChartData) => {
-
   const newRankings = rankings.filter((rank) => rank !== -1);
   const chartArr = newRankings.map((rank, index) => ({
     episode: `EP ${index + 1}`,
     ranking: rank,
   }));
 
-
   return (
-    <ResponsiveContainer  width={"90%"} height={300}>
+    <ResponsiveContainer width={"90%"} height={300}>
       <LineChart
         data={chartArr}
         margin={{
@@ -46,8 +46,13 @@ export const RankingChart = ({ rankings }: IRankingChartData) => {
         }}
       >
         <CartesianGrid vertical={true} horizontal={false} />
-        <XAxis tickMargin={40} axisLine={false} tickLine={false} dataKey="episode" />
-        <YAxis domain={[0, 100]}  reversed tick={false} axisLine={false} />
+        <XAxis
+          tickMargin={40}
+          axisLine={false}
+          tickLine={false}
+          dataKey="episode"
+        />
+        <YAxis domain={[0, 100]} reversed tick={false} axisLine={false} />
         <Line
           animationDuration={500}
           dataKey="ranking"
