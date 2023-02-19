@@ -17,6 +17,12 @@ export const Footer = () => {
           Github
         </a>
       </p>
+      <p style={{ fontWeight: "bold", fontSize: 10 }}>
+        If you find any errors or inaccuracies, you can send me a message on{" "}
+        <a target="_blank" href="https://twitter.com/gyuuviins">
+          Twitter
+        </a>
+      </p>
     </div>
   );
 };
