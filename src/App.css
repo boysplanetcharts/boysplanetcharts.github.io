@@ -30,6 +30,7 @@
   border-radius: 10px;
 }
 
+
 .fixed_header thead {
   border-bottom: 2px solid lightgray;
 }
@@ -42,6 +43,10 @@
   width: 200px;
   min-width: 90px;
 
+}
+
+.fixed_header tbody tr:hover {
+  background-color: rgba(243, 243, 243, 0.753);
 }
 
 .ranking_div {
