@@ -60,7 +60,7 @@ function App() {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: '100vh'}}>
+    <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <div
         style={{
           display: "flex",
@@ -93,7 +93,7 @@ function App() {
             ]}
           />
           <div className="trainee_card">
-            <div>
+            <div style={{ width: "100%" }}>
               <div
                 style={{
                   flexDirection: "row",
@@ -121,32 +121,55 @@ function App() {
                 >
                   <p>{currentTrainee.group}</p>
                 </div>
+                <p>
+                  {currentTrainee.ep2 === 1 && "👑"}{" "}
+                  {currentTrainee.ep2 > 1 && currentTrainee.ep2 < 10 && "⭐"}
+                </p>
               </div>
-              <div style={{ display: "flex", flexDirection: "row" }}>
-                <div>
-                <img
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  paddingBottom: 16,
+                }}
+              >
+                <p
                   style={{
-                    borderRadius: 10,
-                    width: isMobileOrTablet ? "5rem" : "12rem",
+                    width: "70%",
+                    textAlign: "center",
+                    fontSize: isMobileOrTablet ? 10 : 15,
                   }}
-                  src={currentTrainee.image}
-                />
+                >
+                  <em>"{currentTrainee.phrase}"</em>
+                </p>
+              </div>
+              <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <div>
+                  <img
+                    style={{
+                      borderRadius: 10,
+                      width: isMobileOrTablet ? "5rem" : "12rem",
+                    }}
+                    src={currentTrainee.image}
+                  />
                 </div>
                 <div className="trainee_card_column">
                   <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
-                    {currentTrainee.phrase}
-                  </p>
-                  <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
+                    <b style={{ color: "#5a5a5a" }}>Birthdate:</b>{" "}
                     {currentTrainee.dob}
                   </p>
                   <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
-                    {currentTrainee.height}
+                    <b style={{ color: "#5a5a5a" }}>Height:</b>{" "}
+                    {currentTrainee.height}cm
                   </p>
                   <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
-                    Hobby: {currentTrainee.hobby}
+                    <b style={{ color: "#5a5a5a" }}>Hobby:</b>{" "}
+                    {currentTrainee.hobby}
                   </p>
                   <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
-                    Specialty: {currentTrainee.good_at}
+                    <b style={{ color: "#5a5a5a" }}>Specialty:</b>{" "}
+                    {currentTrainee.good_at}
                   </p>
                 </div>
               </div>
@@ -194,7 +217,7 @@ function App() {
           </table>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
