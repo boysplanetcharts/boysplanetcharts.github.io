@@ -15,12 +15,13 @@ interface ICustomizedDot {
   cy: number;
   value: number;
   key: string;
+  stroke: string;
 }
 
-const CustomizedDot = ({ cx, cy, value, key }: ICustomizedDot) => {
+const CustomizedDot = ({ cx, cy, value, key, stroke }: ICustomizedDot) => {
   return (
     <React.Fragment key={key}>
-      <circle cx={cx} cy={cy} r={15} fill="#fb9fcb" />
+      <circle cx={cx} cy={cy} r={15} fill={stroke} />
       <text fill="#fff" textAnchor="middle" x={cx} y={cy + 5}>
         {value}
       </text>
@@ -28,7 +29,7 @@ const CustomizedDot = ({ cx, cy, value, key }: ICustomizedDot) => {
   );
 };
 
-export const RankingChart = ({ rankings }: IRankingChartData) => {
+export const RankingChart = ({ rankings, isGlobal }: IRankingChartData) => {
   const newRankings = rankings.filter((rank) => rank !== -1);
   const chartArr = newRankings.map((rank, index) => ({
     episode: `EP ${index + 1}`,
@@ -56,7 +57,7 @@ export const RankingChart = ({ rankings }: IRankingChartData) => {
         <Line
           animationDuration={500}
           dataKey="ranking"
-          stroke="#fb9fcb"
+          stroke={isGlobal ? "#fb9fcb" : "#7fcaeb"}
           strokeWidth={5}
           dot={CustomizedDot}
         />

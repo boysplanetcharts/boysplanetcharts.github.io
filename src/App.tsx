@@ -136,8 +136,12 @@ function App() {
               currentTrainee?.ep2,
               currentTrainee?.ep3,
             ]}
+            isGlobal={currentTrainee.group === "G"}
           />
-          <div className="trainee_card">
+          <div
+            className="trainee_card"
+            style={{ boxShadow: `0px 0px 29px 5px ${currentTrainee.group === "K" ? "#7fcbeb3d" : "#dc7cb03d"}` }}
+          >
             <div style={{ width: "100%" }}>
               <div
                 style={{
@@ -276,7 +280,8 @@ function App() {
                     key={item.id}
                     style={{
                       position: "relative",
-                      zIndex: item[LATEST_EP_WITH_RANKINGS] === 93 ? 1 : "inherit",
+                      zIndex:
+                        item[LATEST_EP_WITH_RANKINGS] === 93 ? 1 : "inherit",
                     }}
                   >
                     <td>

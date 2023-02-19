@@ -1,3 +1,4 @@
 export interface IRankingChartData {
-    rankings: number[]
+    rankings: number[];
+    isGlobal?: boolean;
 }
