@@ -5,6 +5,7 @@ import { ITraineeInfo, ITraineeInfoWithImage } from "./types";
 import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
 import { Footer } from "./components/Footer";
+import { BiSearchAlt } from "react-icons/bi";
 
 const LATEST_EP_WITH_RANKINGS = "ep2";
 
@@ -15,6 +16,8 @@ function getImageUrl(traineeId: number) {
 
 function App() {
   const { isMobileOrTablet } = useWindowDimensions();
+  const [hasSearchInput, setHasSearchInput] = useState(false);
+  const [showSearchIcon, setShowSearchIcon] = useState(true);
 
   const addImgToTraineeArray = (trainees: ITraineeInfo[]) => {
     return trainees.map((trainee) => ({
@@ -52,6 +55,8 @@ function App() {
     traineesWithImage[0]
   );
 
+  const [filteredTrainees, setFilteredTrainees] = useState(traineesWithImage);
+
   const generateRankDifference = (rank1: number, rank2: number) => {
     const isRankUnavailable = rank2 === -1;
     const difference = rank1 - rank2;
@@ -74,6 +79,29 @@ function App() {
     return (
       <p style={{ color: "#fc1c03", fontSize: 14 }}>{`(▼ ${difference})`}</p>
     );
+  };
+
+  const handleTransitionEnd = () => {
+    setShowSearchIcon(!hasSearchInput);
+  };
+
+  const handleSearchTrainee = (input: string) => {
+    const formattedInput = input.replace(" ", "").toLowerCase();
+
+    if (formattedInput) {
+      const newTrainees = traineesWithImage.filter((trainee) => {
+        const formattedTraineeName = trainee.name
+          .replace(" ", "")
+          .toLowerCase();
+
+        return formattedTraineeName.includes(formattedInput);
+      });
+      setHasSearchInput(true);
+      setFilteredTrainees(newTrainees);
+    } else {
+      setHasSearchInput(false);
+      setFilteredTrainees(traineesWithImage);
+    }
   };
 
   return (
@@ -200,47 +228,78 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="fixed_header">
-          <table>
-            <thead>
-              <tr>
-                <th>NAME</th>
-                <th>GROUP</th>
-                <th>COMPANY</th>
-                <th>EP 1</th>
-                <th>EP 2</th>
-                <th>EP 3</th>
-              </tr>
-            </thead>
-            <tbody>
-              {traineesWithImage.map((item) => (
-                <tr onMouseEnter={() => setCurrentTrainee(item)} key={item.id}>
-                  <td>
-                    {renderTraineeEmojiAccordingToRank(
-                      item[LATEST_EP_WITH_RANKINGS]
-                    )}
-
-                    {item.name}
-                  </td>
-                  <td>{item.group}</td>
-                  <td>{item.company}</td>
-                  <td>{item.ep1}</td>
-                  <td>
-                    <div className="ranking_div">
-                      {generateRankDifference(item.ep1, item.ep2)}
-                      <p>{item.ep2}</p>
-                    </div>
-                  </td>
-                  <td>
-                    <div className="ranking_div">
-                      {generateRankDifference(item.ep2, item.ep3)}
-                      <p>{item.ep3 === -1 ? "-" : item.ep3}</p>
-                    </div>
-                  </td>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            flex: 1,
+          }}
+        >
+          <div className="search_bar_container">
+            <div className="search_bar">
+              <div
+                className="pop-in"
+                style={{
+                  display: "flex",
+                }}
+              >
+                <BiSearchAlt color="#b4b4b4" />
+              </div>
+              <input
+                className="search_bar_input"
+                type="text"
+                onChange={(evt) => handleSearchTrainee(evt.target.value)}
+                placeholder="Search for you trainee!"
+              />
+            </div>
+          </div>
+          <div className="fixed_header">
+            <table>
+              <thead>
+                <tr>
+                  <th>NAME</th>
+                  <th>GROUP</th>
+                  <th>COMPANY</th>
+                  <th>EP 1</th>
+                  <th>EP 2</th>
+                  <th>EP 3</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {filteredTrainees.map((item) => (
+                  <tr
+                    onMouseEnter={() => setCurrentTrainee(item)}
+                    key={item.id}
+                  >
+                    <td>
+                      {renderTraineeEmojiAccordingToRank(
+                        item[LATEST_EP_WITH_RANKINGS]
+                      )}
+
+                      {item.name}
+                    </td>
+                    <td>{item.group}</td>
+                    <td>{item.company}</td>
+                    <td>{item.ep1}</td>
+                    <td>
+                      <div className="ranking_div">
+                        {generateRankDifference(item.ep1, item.ep2)}
+                        <p>{item.ep2}</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div className="ranking_div">
+                        {generateRankDifference(item.ep2, item.ep3)}
+                        <p>{item.ep3 === -1 ? "-" : item.ep3}</p>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <Footer />

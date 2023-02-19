@@ -8,10 +8,10 @@
 .fixed_header {
   flex: 1;
   overflow-x: auto;
-  margin: 32px;
+  width: 90%;
+  margin: 16px 32px;
   border-collapse: collapse;
 }
-
 
 .fixed_header table {
   border-collapse: collapse;
@@ -24,12 +24,10 @@
   height: 400px;
 }
 
-
 .fixed_header thead tr {
   display: block;
   border-radius: 10px;
 }
-
 
 .fixed_header thead {
   border-bottom: 2px solid lightgray;
@@ -42,7 +40,6 @@
   text-align: center;
   width: 200px;
   min-width: 90px;
-
 }
 
 .fixed_header tbody tr:hover {
@@ -64,7 +61,8 @@
   margin: 16px;
   padding: 8px 16px;
   border-radius: 14px;
-  box-shadow: 0px 0px 29px 5px rgba(0,0,0,0.1);}
+  box-shadow: 0px 0px 29px 5px rgba(0, 0, 0, 0.1);
+}
 
 .trainee_card_column {
   display: flex;
@@ -82,4 +80,49 @@
   color: white;
   font-weight: bold;
   margin: 8px;
+}
+
+.search_bar_container {
+  display: flex;
+  width: 90%;
+  margin-top: 16px;
+}
+
+.search_bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 12px;
+  border-radius: 12px;
+  box-shadow: 0 3px 20px -3px #d5dbed;
+}
+
+.search_bar:hover {
+  box-shadow: 0 3px 20px -3px #c34e964b;
+}
+
+.search_bar_input {
+  display: flex;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.pop-in {
+  animation: pop-in 0.5s ease;
+  -webkit-animation: pop-in 0.5s ease;
+}
+
+@-webkit-keyframes pop-in {
+  from {
+    -webkit-transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.4);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
