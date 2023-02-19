@@ -30,16 +30,20 @@ const CustomizedDot = ({ cx, cy, value, key, stroke }: ICustomizedDot) => {
 };
 
 export const RankingChart = ({ rankings, isGlobal }: IRankingChartData) => {
-  const newRankings = rankings.filter((rank) => rank !== -1);
-  const chartArr = newRankings.map((rank, index) => ({
-    episode: `EP ${index + 1}`,
-    ranking: rank,
-  }));
+  // const newRankings = rankings.filter((rank) => rank !== -1);
+  const chartArr = rankings.map((rank, index) => {
+    if (rank !== -1) {
+      return {
+        episode: `EP ${index + 1}`,
+        ranking: rank,
+      };
+    }
+  });
 
   return (
     <ResponsiveContainer width={"90%"} height={300}>
       <LineChart
-        data={chartArr}
+        data={chartArr.filter(item => item)}
         margin={{
           top: 60,
           right: 20,

@@ -135,6 +135,7 @@ function App() {
               currentTrainee?.ep1,
               currentTrainee?.ep2,
               currentTrainee?.ep3,
+
             ]}
             isGlobal={currentTrainee.group === "G"}
           />
