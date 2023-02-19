@@ -6,7 +6,8 @@ import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
 
 function getImageUrl(traineeId: number) {
-  return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url).href;
+  return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url)
+    .href;
 }
 
 function App() {
@@ -32,7 +33,6 @@ function App() {
   const [currentTrainee, setCurrentTrainee] = useState<ITraineeInfoWithImage>(
     traineesWithImage[0]
   );
-  
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -123,26 +123,19 @@ function App() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            flex: 1,
-            overflowX: "auto",
-            overflowY: "scroll",
-            maxHeight: 400,
-            padding: 20,
-          }}
-        >
+        <div className="fixed_header">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Group</th>
+              <th>Company</th>
+              <th>EP1</th>
+              <th>EP2</th>
+              <th>EP3</th>
+            </tr>
+          </thead>
           <table>
-            <h1>Trainees</h1>
             <tbody>
-              <tr>
-                <th>Name</th>
-                <th>Group</th>
-                <th>Company</th>
-                <th>EP1</th>
-                <th>EP2</th>
-                <th>EP3</th>
-              </tr>
               {traineesWithImage.map((item) => (
                 <tr onMouseEnter={() => setCurrentTrainee(item)} key={item.id}>
                   <td>{item.name}</td>

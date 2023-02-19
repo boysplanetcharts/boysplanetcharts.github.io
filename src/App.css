@@ -1,7 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans";
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+.fixed_header {
+  flex: 1;
+  padding: 40px 40px;
+  border-collapse: collapse;
+}
+
+.fixed_header table {
+  border-collapse: collapse;
+}
+
+.fixed_header tbody {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  height: 400px;
+}
+
+.fixed_header thead tr {
+  display: block;
+  border-radius: 10px
+}
+
+.fixed_header thead {
+  background: #eee;
+}
+
+.fixed_header th,
+.fixed_header td {
+  padding: 5px;
+  text-align: left;
+
+  width: 200px;
+}
