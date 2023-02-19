@@ -91,29 +91,8 @@ function App() {
               currentTrainee?.ep3,
             ]}
           />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-            }}
-          >
-            <div style={{ margin: 24 }}>
-              <img
-                style={{
-                  borderRadius: 10,
-                  width: isMobileOrTablet ? "5rem" : "12rem",
-                }}
-                src={currentTrainee.image}
-              />
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                marginLeft: 24,
-              }}
-            >
+          <div className="trainee_card">
+            <div>
               <div
                 style={{
                   flexDirection: "row",
@@ -121,31 +100,55 @@ function App() {
                   alignItems: "center",
                 }}
               >
-                <p style={{ fontWeight: "bold", margin: 0, padding: 0 }}>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    margin: 0,
+                    padding: 0,
+                    fontSize: isMobileOrTablet ? 16 : 20,
+                  }}
+                >
                   {currentTrainee.name}
                 </p>
                 <div
                   style={{
-                    height: 32,
-                    width: 32,
                     backgroundColor:
                       currentTrainee.group === "G" ? "#dc7cb0" : "#7fcaeb",
-                    display: "flex",
-                    borderRadius: 25,
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "white",
-                    margin: 8,
+                    fontSize: isMobileOrTablet ? 14 : 18,
                   }}
+                  className="trainee_group_circle"
                 >
                   <p>{currentTrainee.group}</p>
                 </div>
               </div>
-              <p>{currentTrainee.phrase}</p>
-              <p>{currentTrainee.dob}</p>
-              <p>{currentTrainee.height}</p>
-              <p>Hobby: {currentTrainee.hobby}</p>
-              <p>Specialty: {currentTrainee.good_at}</p>
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <div>
+                <img
+                  style={{
+                    borderRadius: 10,
+                    width: isMobileOrTablet ? "5rem" : "12rem",
+                  }}
+                  src={currentTrainee.image}
+                />
+                </div>
+                <div className="trainee_card_column">
+                  <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
+                    {currentTrainee.phrase}
+                  </p>
+                  <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
+                    {currentTrainee.dob}
+                  </p>
+                  <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
+                    {currentTrainee.height}
+                  </p>
+                  <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
+                    Hobby: {currentTrainee.hobby}
+                  </p>
+                  <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
+                    Specialty: {currentTrainee.good_at}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -164,7 +167,11 @@ function App() {
             <tbody>
               {traineesWithImage.map((item) => (
                 <tr onMouseEnter={() => setCurrentTrainee(item)} key={item.id}>
-                  <td>{item.name}</td>
+                  <td>
+                    {item.ep2 === 1 && "👑"}
+                    {item.ep2 > 1 && item.ep2 < 10 && "⭐"}
+                    {item.name}
+                  </td>
                   <td>{item.group}</td>
                   <td>{item.company}</td>
                   <td>{item.ep1}</td>
