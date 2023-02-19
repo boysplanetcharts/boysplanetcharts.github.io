@@ -275,7 +275,7 @@ function App() {
                     key={item.id}
                     style={{
                       position: "relative",
-                      zIndex: item[LATEST_EP_WITH_RANKINGS] === 93 ? 1 : -1,
+                      zIndex: item[LATEST_EP_WITH_RANKINGS] === 93 ? 1 : "inherit",
                     }}
                   >
                     <td>
