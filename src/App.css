@@ -24,7 +24,7 @@
 
 .fixed_header thead tr {
   display: block;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .fixed_header thead {
@@ -35,6 +35,16 @@
 .fixed_header td {
   padding: 5px;
   text-align: left;
-
+  text-align: center;
   width: 200px;
 }
+
+.ranking_div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+

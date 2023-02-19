@@ -34,6 +34,38 @@ function App() {
     traineesWithImage[0]
   );
 
+  const generateRankDifference = (rank1: number, rank2: number) => {
+    const isRankUnavailable = rank2 === -1;
+    const difference = rank1 - rank2;
+    const noDifference = difference === 0;
+    const higher = difference > 0;
+
+    if (isRankUnavailable) {
+      return "";
+    }
+
+    if (noDifference) {
+      return (
+        <p
+          style={{ color: "#9eada3", fontSize: 14 }}
+        >{`(-) `}</p>
+      );
+    }
+    if (higher) {
+      return (
+        <p
+          style={{ color: "#37f075", fontSize: 14 }}
+        >{`(▲ ${difference})`}</p>
+      );
+    }
+
+    return (
+      <p
+        style={{ color: "#fc1c03", fontSize: 14 }}
+      >{`(▼ ${difference})`}</p>
+    );
+  };
+
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div
@@ -142,8 +174,18 @@ function App() {
                   <td>{item.group}</td>
                   <td>{item.company}</td>
                   <td>{item.ep1}</td>
-                  <td>{item.ep2}</td>
-                  <td>{item.ep3 === -1 ? "-" : item.ep3}</td>
+                  <td>
+                    <div className="ranking_div">
+                      {generateRankDifference(item.ep1, item.ep2)}
+                      <p>{item.ep2}</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="ranking_div">
+                      {generateRankDifference(item.ep2, item.ep3)}
+                      <p>{item.ep3 === -1 ? "-" : item.ep3}</p>
+                    </div>
+                  </td>
                 </tr>
               ))}
             </tbody>
