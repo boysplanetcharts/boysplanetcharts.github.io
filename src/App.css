@@ -128,6 +128,20 @@
   -webkit-animation: pop-in 0.5s ease;
 }
 
+.external_link_icon {
+  color: #888888;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.external_link_icon:hover {
+  color: #bbbbbb
+}
+
+.external_link_icon:hover {
+  transform: scale(1.2)
+}
+
 @-webkit-keyframes pop-in {
   from {
     -webkit-transform: scale(0);

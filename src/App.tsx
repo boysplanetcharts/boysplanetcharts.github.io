@@ -5,7 +5,7 @@ import { ITraineeInfo, ITraineeInfoWithImage } from "./types";
 import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
 import { Footer } from "./components/Footer";
-import { BiSearchAlt } from "react-icons/bi";
+import { BiSearchAlt, BiLinkExternal } from "react-icons/bi";
 
 const LATEST_EP_WITH_RANKINGS = "ep2";
 
@@ -140,7 +140,11 @@ function App() {
           />
           <div
             className="trainee_card"
-            style={{ boxShadow: `0px 0px 29px 5px ${currentTrainee.group === "K" ? "#7fcbeb3d" : "#dc7cb03d"}` }}
+            style={{
+              boxShadow: `0px 0px 29px 5px ${
+                currentTrainee.group === "K" ? "#7fcbeb3d" : "#dc7cb03d"
+              }`,
+            }}
           >
             <div style={{ width: "100%" }}>
               <div
@@ -175,6 +179,20 @@ function App() {
                     currentTrainee[LATEST_EP_WITH_RANKINGS]
                   )}
                 </p>
+                <div
+                  style={{
+                    display: "flex",
+                    flex: 1,
+                    justifyContent: "flex-end",
+                  }}
+                >
+                  <a
+                    href={`https://service.mnetplus.world/boysplanet/en/artist/${currentTrainee.id}`}
+                    target="_blank"
+                  >
+                    <BiLinkExternal className="external_link_icon" size={24} />
+                  </a>
+                </div>
               </div>
               <div
                 style={{
