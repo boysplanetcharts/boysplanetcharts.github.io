@@ -257,6 +257,7 @@ function App() {
           </div>
           <div className="fixed_header">
             <table>
+              <div className="fade_div" />
               <thead>
                 <tr>
                   <th>NAME</th>
@@ -272,6 +273,10 @@ function App() {
                   <tr
                     onMouseEnter={() => setCurrentTrainee(item)}
                     key={item.id}
+                    style={{
+                      position: "relative",
+                      zIndex: item[LATEST_EP_WITH_RANKINGS] === 93 ? 1 : -1,
+                    }}
                   >
                     <td>
                       {renderTraineeEmojiAccordingToRank(
