@@ -66,6 +66,8 @@ function App() {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#5825ae",
+          background:
+            "radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)",
           height: 150,
           width: "100%",
         }}
