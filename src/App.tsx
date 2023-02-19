@@ -233,7 +233,8 @@ function App() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "flex-start",
+            gap: 24,
             flex: 1,
           }}
         >

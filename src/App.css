@@ -6,10 +6,8 @@
   font-family: "Open Sans";
 }
 .fixed_header {
-  flex: 1;
   overflow-x: auto;
   width: 90%;
-  margin: 16px 32px;
   border-collapse: collapse;
 }
 
@@ -33,11 +31,12 @@
 .fixed_header tbody {
   display: block;
   width: 100%;
-  overflow: overlay;
-
+  overflow: auto;
   height: 400px;
 
 }
+
+
 
 .fixed_header thead tr {
   display: block;
