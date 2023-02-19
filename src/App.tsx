@@ -151,12 +151,12 @@ function App() {
           <table>
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Group</th>
-                <th>Company</th>
-                <th>EP1</th>
-                <th>EP2</th>
-                <th>EP3</th>
+                <th>NAME</th>
+                <th>GROUP</th>
+                <th>COMPANY</th>
+                <th>EP 1</th>
+                <th>EP 2</th>
+                <th>EP 3</th>
               </tr>
             </thead>
             <tbody>

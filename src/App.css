@@ -31,7 +31,7 @@
 }
 
 .fixed_header thead {
-  background: #eee;
+  border-bottom: 2px solid lightgray;
 }
 
 .fixed_header th,
