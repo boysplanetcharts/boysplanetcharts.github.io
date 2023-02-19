@@ -4,6 +4,7 @@ import { RankingChart } from "./components/ranking-chart";
 import { ITraineeInfo, ITraineeInfoWithImage } from "./types";
 import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
+import { Footer } from "./components/Footer";
 
 function getImageUrl(traineeId: number) {
   return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url)
@@ -59,7 +60,7 @@ function App() {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ display: "flex", flexDirection: "column", height: '100vh'}}>
       <div
         style={{
           display: "flex",
@@ -193,6 +194,7 @@ function App() {
           </table>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
