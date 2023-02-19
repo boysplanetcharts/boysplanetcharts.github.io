@@ -7,9 +7,11 @@
 }
 .fixed_header {
   flex: 1;
-  padding: 40px 40px;
+  overflow-x: auto;
+  margin: 32px;
   border-collapse: collapse;
 }
+
 
 .fixed_header table {
   border-collapse: collapse;
@@ -18,9 +20,10 @@
 .fixed_header tbody {
   display: block;
   width: 100%;
-  overflow: auto;
+  overflow: overlay;
   height: 400px;
 }
+
 
 .fixed_header thead tr {
   display: block;
@@ -37,6 +40,8 @@
   text-align: left;
   text-align: center;
   width: 200px;
+  min-width: 90px;
+
 }
 
 .ranking_div {

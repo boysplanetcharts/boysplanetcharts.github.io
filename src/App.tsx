@@ -45,24 +45,16 @@ function App() {
     }
 
     if (noDifference) {
-      return (
-        <p
-          style={{ color: "#9eada3", fontSize: 14 }}
-        >{`(-) `}</p>
-      );
+      return <p style={{ color: "#9eada3", fontSize: 14 }}>{`(-) `}</p>;
     }
     if (higher) {
       return (
-        <p
-          style={{ color: "#37f075", fontSize: 14 }}
-        >{`(▲ ${difference})`}</p>
+        <p style={{ color: "#37f075", fontSize: 14 }}>{`(▲ ${difference})`}</p>
       );
     }
 
     return (
-      <p
-        style={{ color: "#fc1c03", fontSize: 14 }}
-      >{`(▼ ${difference})`}</p>
+      <p style={{ color: "#fc1c03", fontSize: 14 }}>{`(▼ ${difference})`}</p>
     );
   };
 
@@ -156,17 +148,17 @@ function App() {
           </div>
         </div>
         <div className="fixed_header">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Group</th>
-              <th>Company</th>
-              <th>EP1</th>
-              <th>EP2</th>
-              <th>EP3</th>
-            </tr>
-          </thead>
           <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Group</th>
+                <th>Company</th>
+                <th>EP1</th>
+                <th>EP2</th>
+                <th>EP3</th>
+              </tr>
+            </thead>
             <tbody>
               {traineesWithImage.map((item) => (
                 <tr onMouseEnter={() => setCurrentTrainee(item)} key={item.id}>
