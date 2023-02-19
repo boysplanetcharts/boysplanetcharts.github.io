@@ -6,6 +6,8 @@ import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
 import { Footer } from "./components/Footer";
 
+const LATEST_EP_WITH_RANKINGS = "ep2";
+
 function getImageUrl(traineeId: number) {
   return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url)
     .href;
@@ -21,8 +23,23 @@ function App() {
     }));
   };
 
+  const renderTraineeEmojiAccordingToRank = (rank: number) => {
+    if (rank === 1) {
+      return "👑";
+    }
+    if (rank > 1 && rank < 10) {
+      return "⭐";
+    }
+
+    return "";
+  };
+
   const traineesSortedByMostRecentRank = useMemo(
-    () => traineesData.sort((item1, item2) => item1.ep2 - item2.ep2),
+    () =>
+      traineesData.sort(
+        (item1, item2) =>
+          item1[LATEST_EP_WITH_RANKINGS] - item2[LATEST_EP_WITH_RANKINGS]
+      ),
     [traineesData]
   );
 
@@ -122,8 +139,9 @@ function App() {
                   <p>{currentTrainee.group}</p>
                 </div>
                 <p>
-                  {currentTrainee.ep2 === 1 && "👑"}{" "}
-                  {currentTrainee.ep2 > 1 && currentTrainee.ep2 < 10 && "⭐"}
+                  {renderTraineeEmojiAccordingToRank(
+                    currentTrainee[LATEST_EP_WITH_RANKINGS]
+                  )}
                 </p>
               </div>
               <div
@@ -144,7 +162,13 @@ function App() {
                   <em>"{currentTrainee.phrase}"</em>
                 </p>
               </div>
-              <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
                 <div>
                   <img
                     style={{
@@ -192,8 +216,10 @@ function App() {
               {traineesWithImage.map((item) => (
                 <tr onMouseEnter={() => setCurrentTrainee(item)} key={item.id}>
                   <td>
-                    {item.ep2 === 1 && "👑"}
-                    {item.ep2 > 1 && item.ep2 < 10 && "⭐"}
+                    {renderTraineeEmojiAccordingToRank(
+                      item[LATEST_EP_WITH_RANKINGS]
+                    )}
+
                     {item.name}
                   </td>
                   <td>{item.group}</td>
