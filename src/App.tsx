@@ -104,6 +104,8 @@ function App() {
     }
   };
 
+  const TRAINEE_RANK_ARRAY = useMemo(() => [currentTrainee.ep1, currentTrainee.ep2, currentTrainee.ep3], [currentTrainee])
+
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <div
@@ -131,12 +133,7 @@ function App() {
       >
         <div style={{ flex: 1 }}>
           <RankingChart
-            rankings={[
-              currentTrainee?.ep1,
-              currentTrainee?.ep2,
-              currentTrainee?.ep3,
-
-            ]}
+            rankings={TRAINEE_RANK_ARRAY}
             isGlobal={currentTrainee.group === "G"}
           />
           <div

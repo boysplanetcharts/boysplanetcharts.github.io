@@ -31,20 +31,27 @@ const CustomizedDot = ({ cx, cy, value, key, stroke }: ICustomizedDot) => {
 
 export const RankingChart = ({ rankings, isGlobal }: IRankingChartData) => {
   // const newRankings = rankings.filter((rank) => rank !== -1);
-  console.log("rankgg", rankings)
-  const chartArr = rankings.map((rank, index) => {
-    if (rank !== -1) {
-      return {
-        episode: `EP ${index + 1}`,
-        ranking: rank,
-      };
-    }
-  });
+  const [chartData, setChartData] = React.useState([]);
+
+  console.log("rankgg", rankings);
+
+  React.useEffect(() => {
+    const chartArr = rankings.map((rank, index) => {
+      if (rank !== -1) {
+        return {
+          episode: `EP ${index + 1}`,
+          ranking: rank,
+        };
+      }
+    });
+
+    setChartData(chartArr.filter((item) => item) as any);
+  }, [rankings[0]]);
 
   return (
     <ResponsiveContainer key={rankings[0]} width={"90%"} height={300}>
       <LineChart
-        data={chartArr.filter(item => item)}
+        data={chartData}
         margin={{
           top: 60,
           right: 20,
