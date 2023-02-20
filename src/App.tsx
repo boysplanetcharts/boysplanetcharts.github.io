@@ -106,6 +106,11 @@ function App() {
 
   const TRAINEE_RANK_ARRAY = useMemo(() => [currentTrainee.ep1, currentTrainee.ep2, currentTrainee.ep3], [currentTrainee])
 
+  const handleClickTraineeRow = (trainee: ITraineeInfoWithImage) => {
+    setCurrentTrainee(trainee);
+    window.scrollTo({top: 0, left: 0, behavior: "smooth"})
+  }
+
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <div
@@ -293,6 +298,7 @@ function App() {
                 {filteredTrainees.map((item) => (
                   <tr
                     onMouseEnter={() => setCurrentTrainee(item)}
+                    onClick={() => handleClickTraineeRow(item)}
                     key={item.id}
                     style={{
                       position: "relative",
