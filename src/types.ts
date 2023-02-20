@@ -11,6 +11,7 @@ export interface ITraineeInfo {
     hobby: string;
     good_at: string;
     phrase: string;
+    wb_supertopic?: string;
 }
 
 export interface ITraineeInfoWithImage extends ITraineeInfo {

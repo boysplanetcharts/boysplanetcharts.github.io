@@ -14,6 +14,8 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Watching movies, playing games, singing, and dancing",
     good_at: "I can sweat on my hand in no time!",
     phrase: "I will become an idol that makes you happy when you see it!!!",
+    wb_supertopic:
+      "https://weibo.com/p/10080820c37e880f3c4a53ca96cb00300ef8f7/super_index",
   },
   {
     name: "BAK DO HA",
@@ -28,6 +30,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Exercise, cook, baking, reading a novel",
     good_at: "Bass rap",
     phrase: "I’ll spend the most valuable time than others.",
+    wb_supertopic: "",
   },
   {
     name: "BRIAN",
@@ -42,6 +45,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Basketball, listening to music, game",
     good_at: "Reverse thumb knuckle fold",
     phrase: "I’ll do my best. I’ll do my best.",
+    wb_supertopic: "",
   },
   {
     name: "CAI JIN XIN",
@@ -58,6 +62,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I'm very positive and good at mind controlling",
     phrase:
       "Let's do our best to enjoy the process rather than the result with a positive mind",
+    wb_supertopic: "",
   },
   {
     name: "CHA WOONG KI",
@@ -72,6 +77,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Studying idol history, producing virtual idols, imagining…",
     good_at: "Do imagination!! Don't get knocked down♡_♡",
     phrase: "It starts now, CHA WOONG KI! Go for it! ><",
+    wb_supertopic: "",
   },
   {
     name: "CHEN JIAN YU",
@@ -88,6 +94,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I’m looking for it",
     phrase:
       "I want to become a great person who proves my potential through blood and sweat.",
+    wb_supertopic:
+      "https://weibo.com/p/100808acc06f66a099d1e240b4d22ad4a9ae76/",
   },
   {
     name: "CHEN KUAN JUI",
@@ -102,6 +110,8 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Copy choreography, stretching, drawing, and dancing",
     good_at: "Modern dance, ballet, traditional Chinese dance",
     phrase: "I'm here for my debut, so please wait a little longer♥",
+    wb_supertopic:
+      "https://weibo.com/p/100808bc8e8f50a5f6c2aa2595a2842a330775/",
   },
   {
     name: "CHEN LIANG",
@@ -116,6 +126,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Basketball and surfing",
     good_at: "Surfing, yo-yo",
     phrase: "I won't stop again, I want to fly high~",
+    wb_supertopic: "",
   },
   {
     name: "CHEN REN YOU",
@@ -130,6 +141,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Exploring food, listening to music, shopping",
     good_at: "I sing a good ballad",
     phrase: "I’ll do my best.",
+    wb_supertopic: "",
   },
   {
     name: "CHEN YU GENG",
@@ -144,6 +156,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "basketball, badminton, games, songwriting",
     good_at: "Rotate the arm 360 degrees",
     phrase: "Let's work together and have fun together on stage!",
+    wb_supertopic: "",
   },
   {
     name: "CHOI JI HO",
@@ -160,6 +173,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Freestyle dance",
     phrase:
       "I'll show you everything I've prepared and I will make a stage for BOYS PLANET Legend!!",
+    wb_supertopic: "",
   },
   {
     name: "CHOI SEUNG HUN",
@@ -174,6 +188,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Water skiing, games, tennis",
     good_at: "Dad joke",
     phrase: "I'm not good enough, but I'll do my best.",
+    wb_supertopic: "",
   },
   {
     name: "CHOI WOO JIN",
@@ -188,6 +203,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Take a photo with a digital camera, Travel by a bicycle",
     good_at: "Take a photo",
     phrase: "I’ll do my best every time for not regretting.",
+    wb_supertopic: "",
   },
   {
     name: "CONG",
@@ -202,6 +218,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Watching movies, playing games, and traveling",
     good_at: "Acting cute",
     phrase: "Debut fighting",
+    wb_supertopic: "",
   },
   {
     name: "DANG HONG HAI",
@@ -217,6 +234,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Sing well without closing your eyes♥",
     phrase:
       "I will break the stage with my skills and passion, so please watch over me!",
+    wb_supertopic:
+      "https://weibo.com/p/1008087944992310ce8d17cce4d0cb5a6bbeb5/",
   },
   {
     name: "DONG DONG",
@@ -231,6 +250,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Watching movies, fashion, rap, eating delicious food",
     good_at: "low-pitched voice",
     phrase: "I'll show you the perfect look in any situation! '◡'",
+    wb_supertopic: "",
   },
   {
     name: "FENG JUN LAN",
@@ -245,6 +265,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Basketball, computer games, and eating goodies",
     good_at: "yo-yo, computer game, basketball",
     phrase: "I'm here to take over ＜BOYS PLANET＞!!!",
+    wb_supertopic: "",
   },
   {
     name: "HAN SEO BIN",
@@ -260,6 +281,7 @@ export const traineesData: ITraineeInfo[] = [
       "Taking a walk, composing (midi), watching a movie, snacking, eating and listening to music",
     good_at: "Utmost gag skill",
     phrase: "I've done my best I’ll show you everything I've practiced...^▽^",
+    wb_supertopic: "",
   },
   {
     name: "HAN YU JIN",
@@ -275,6 +297,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "motor system",
     phrase:
       "Please look forward to it since I’m still growing in stature and improving my skill.",
+    wb_supertopic: "https://weibo.com/p/1008086f4b27d8c665341e1c211ca7b940a61b",
   },
   {
     name: "HAN YU SEOP",
@@ -289,6 +312,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Guitar, composing, attack a melody, and take a walk",
     good_at: "Guitar",
     phrase: "I will quench your thirst with my refreshing dance and songs!!",
+    wb_supertopic: "",
   },
   {
     name: "HARU",
@@ -303,6 +327,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Gag, vocal mimicry (imitation)",
     good_at: "Stitch vocal cord imitation",
     phrase: "You will only look at me",
+    wb_supertopic: "",
   },
   {
     name: "HARUTO",
@@ -317,6 +342,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Study languages, observe humans, develop oatmeal recipes",
     good_at: "Wrist clap",
     phrase: "I am the seed, you are my water",
+    wb_supertopic: "",
   },
   {
     name: "HIROTO",
@@ -331,6 +357,8 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Game, making a rap and watching movies",
     good_at: "Eating a lot",
     phrase: "I must debut!!!!!!!",
+    wb_supertopic:
+      "https://weibo.com/p/10080874a9ff6408bcd1cd51d6831818ff09bb/",
   },
   {
     name: "HONG KEON HEE",
@@ -346,6 +374,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "K-pop choreography vending machine",
     phrase:
       "I’ll show you the legendary performance in every stage so that you will love me the most!!",
+    wb_supertopic: "",
   },
   {
     name: "HYO",
@@ -360,6 +389,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Eating ice cream and taking pictures of it (memorial photo)",
     good_at: "Wiggling the pupils",
     phrase: "I’ll keep focusing on debut!!",
+    wb_supertopic: "",
   },
   {
     name: "ICHIKA",
@@ -374,6 +404,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Reading and hiking",
     good_at: "Power of practice and power of action",
     phrase: "I'll show you the look of human victory!!",
+    wb_supertopic: "",
   },
   {
     name: "ITSUKI",
@@ -388,6 +419,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Listening to music, eating snacks",
     good_at: "Voice imitation of Spirited Away 'Kashira'",
     phrase: "I'll show you a cool image with own confidence.",
+    wb_supertopic: "",
   },
   {
     name: "JANG JI HO",
@@ -402,6 +434,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Game, soccer, sleeping, checking cellphone",
     good_at: "Rolling over the bed all day long lol",
     phrase: "I’ll make you think the person, Jiho all the time.",
+    wb_supertopic: "",
   },
   {
     name: "JANG YEO JUN",
@@ -416,6 +449,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Watching videos, eating delicious food, sleeping",
     good_at: "Flexible cheek meet",
     phrase: "I will never miss this precious opportunity!",
+    wb_supertopic: "",
   },
   {
     name: "JAY",
@@ -431,6 +465,7 @@ export const traineesData: ITraineeInfo[] = [
       "Play basketball, watch movies, write scripts, study history, and play games",
     good_at: "Playing drums with left hand",
     phrase: "I will think of BOYS PLANET as my last chance and work hard!",
+    wb_supertopic: "",
   },
   {
     name: "JEON HO YOUNG",
@@ -446,6 +481,7 @@ export const traineesData: ITraineeInfo[] = [
       "Reading a book, watching drama and movie, analyzing characters and circumstances",
     good_at: "Waving with eyebrows",
     phrase: "I’ll be the best!",
+    wb_supertopic: "",
   },
   {
     name: "JEON WOO SEOK",
@@ -460,6 +496,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Playing basketball, walking at a park while listening to music",
     good_at: "I have fast feet",
     phrase: "Dream comes true☆",
+    wb_supertopic: "",
   },
   {
     name: "JEONG I CHAN",
@@ -474,6 +511,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Watching videos, imagining a random building is mine",
     good_at: "I can make a song! ><",
     phrase: "I’ll always do my best in every time!",
+    wb_supertopic: "",
   },
   {
     name: "JI YUN SEO",
@@ -490,6 +528,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Two-finger push-up, making a water drop sound",
     phrase:
       "Until it doesn't work, if there are no teeth, with the gums. Fire~!",
+    wb_supertopic: "",
   },
   {
     name: "JUNG HO JIN",
@@ -507,6 +546,7 @@ export const traineesData: ITraineeInfo[] = [
       "Girl group dance, 3 animal walks(ostrich, gorilla, giraffe), talent",
     phrase:
       "I will definitely fulfill my dream of debuting and give you lots of bright energy!",
+    wb_supertopic: "",
   },
   {
     name: "JUNG MIN GYU",
@@ -522,6 +562,7 @@ export const traineesData: ITraineeInfo[] = [
       "Swimming, watching movies, games, playing badminton, making Pla model, and cooking",
     good_at: "Quickly change facial expressions",
     phrase: "Do my best as today is the last day of my life!",
+    wb_supertopic: "",
   },
   {
     name: "JUNG SE YUN",
@@ -538,6 +579,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at:
       "Kneeling, pretending to be a praying mantis, and putting bottle caps on your eyes",
     phrase: "I’ll be the person who can resonate your heart!",
+    wb_supertopic: "",
   },
   {
     name: "KEI",
@@ -553,6 +595,7 @@ export const traineesData: ITraineeInfo[] = [
       "Dancing, watching videos, listening to music, exercising, skateboarding",
     good_at: "Making fun face",
     phrase: "I will run with all my might to make my dream come true!!",
+    wb_supertopic: "",
   },
   {
     name: "KEITA",
@@ -567,6 +610,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Composition",
     good_at: "I can sleep for 3 days in a row",
     phrase: "Keita will be in charge of BOYS PLANET's K-Pop!!",
+    wb_supertopic: "",
   },
   {
     name: "KIM GYU VIN",
@@ -583,6 +627,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Balancing, losing rock-paper-scissors",
     phrase:
       "I worked harder than anyone else and eventually debuted in BOYS PLANET",
+    wb_supertopic:
+      "https://weibo.com/p/10080847abc643ff266e5c5df69f48651256f2/",
   },
   {
     name: "KIM JI WOONG",
@@ -597,6 +643,8 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Meditation, chat",
     good_at: "I can bear with hot things",
     phrase: "I’ll do my best.",
+    wb_supertopic:
+      "https://weibo.com/p/100808193905d012a974d6716125cad24f9554/",
   },
   {
     name: "KIM MIN HYUK",
@@ -611,6 +659,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Games, learning new knowledge, reading, and running",
     good_at: "Eloquence",
     phrase: "I’m sure I’ll do my best than anyone!!!",
+    wb_supertopic: "",
   },
   {
     name: "KIM MIN SEOUNG",
@@ -627,6 +676,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Acrobatic",
     phrase:
       "I will fight with the determination to die so that I will not leave even 1mm of regret.",
+    wb_supertopic: "",
   },
   {
     name: "KIM TAE RAE",
@@ -641,6 +691,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Playing the guitar and exploring restaurants",
     good_at: "Create lip triangles and add chords to songs",
     phrase: "I will advance to a debut position as high as my high treble!!",
+    wb_supertopic: "",
   },
   {
     name: "KRYSTIAN",
@@ -656,6 +707,8 @@ export const traineesData: ITraineeInfo[] = [
       "Music composition, travel, health, art exhibition, music performance, etc. viewing",
     good_at: "BLACKPINK choreography master",
     phrase: "I will repay you with a shining stage.",
+    wb_supertopic:
+      "https://weibo.com/p/100808711af677083e3753a4f87a11f8ca815e/",
   },
   {
     name: "KUM JUN HYEON",
@@ -670,6 +723,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Chat, eating",
     good_at: "I’m good at doing a diet",
     phrase: "I will do my best not to disappoint you.",
+    wb_supertopic: "",
   },
   {
     name: "LEE DA EUL",
@@ -686,6 +740,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Acting",
     phrase:
       "It’s your choice to fall in love with my charming point but it’s hard to get out of here.",
+    wb_supertopic:
+      "https://weibo.com/p/10080809e9b8e69255e99f2d73e391d7e361b5/",
   },
   {
     name: "LEE DONG GUN",
@@ -702,6 +758,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I’m very flexible. But I’m very powerful when I dance.",
     phrase:
       "I will work hard so that my bright smile and hopeful energy can settle in your hearts! Ha-ha",
+    wb_supertopic: "",
   },
   {
     name: "LEE DONG YEOL",
@@ -717,6 +774,7 @@ export const traineesData: ITraineeInfo[] = [
       "Taking a walk at dawn, meeting friends, writing lyrics, and composing music",
     good_at: "Lips get bigger when you wake upor eat spicy food",
     phrase: "I’ll be the person that people want to keep watching!!",
+    wb_supertopic: "",
   },
   {
     name: "LEE HOE TEAK",
@@ -732,6 +790,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Play Loop Station, never give up...",
     phrase:
       "It’s a challenge but since I've started this challenge, I’ll make a good result.",
+    wb_supertopic:
+      "https://weibo.com/p/100808dd453ff6b54c4bb243773a0d35e09d17/",
   },
   {
     name: "LEE HWAN HEE",
@@ -747,6 +807,7 @@ export const traineesData: ITraineeInfo[] = [
       "Watching drama movies and webtoons at home, and imagining star creators",
     good_at: "Blocking nostril one side without using my hands…♡",
     phrase: "I will show you Hwanhee who is good at having fun♡",
+    wb_supertopic: "",
   },
   {
     name: "LEE JEONG HYEON",
@@ -762,6 +823,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Solve cube fast",
     phrase:
       "I’ll show all the things that I’ve got such as skills or charming!",
+    wb_supertopic:
+      "https://weibo.com/p/100808752700df8c27b527fb740f41166801d1/",
   },
   {
     name: "LEE SEUNG HWAN",
@@ -777,6 +840,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at:
       "Shameless (saying anything well), eating well, taking good care of those around you (My friends told me♥)",
     phrase: "Even if I can't fly high, I'll fly far!",
+    wb_supertopic:
+      "https://weibo.com/p/100808e60f4d7ecab7f6460b6d2157092d61c9/",
   },
   {
     name: "LEE YE DAM",
@@ -792,6 +857,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Limbo (not flexible ^^)",
     phrase:
       "I can see my future over there. I’ll keep going higher and higher until I can get that future!",
+    wb_supertopic: "",
   },
   {
     name: "LIM JUN SEO",
@@ -806,6 +872,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Sleeping at home, rolling all over all day long, talking to Daeul",
     good_at: "Moving ears",
     phrase: "＜BOYS PLANET＞, wait and see. LIM JUN SEO is going.",
+    wb_supertopic: "",
   },
   {
     name: "LIN SHI YUAN",
@@ -820,6 +887,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Travel and game",
     good_at: "Acrobatic",
     phrase: "I will definitely enter the lucky number '7'.",
+    wb_supertopic: "",
   },
   {
     name: "MA JING XIANG",
@@ -835,6 +903,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Model walking, pose, Woo Kimyung pose",
     phrase:
       "If you practice a lot, you won't be nervous. To the top JING XIANG. Please remember my name!",
+    wb_supertopic: "",
   },
   {
     name: "MIN",
@@ -849,6 +918,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Drawing, cooking, watching horror movies, traveling alone outside",
     good_at: "Sing whistle, hand wave",
     phrase: "Let’s go MIN",
+    wb_supertopic: "",
   },
   {
     name: "MUN JONG HYUN",
@@ -865,6 +935,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Imperfect absolute pitch",
     phrase:
       "I will show you the tension of the other world that no one has been able to handle yet.",
+    wb_supertopic: "",
   },
   {
     name: "NA KAMDEN",
@@ -879,6 +950,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Cooking, shopping, making phone calls, soccer, watching videos",
     good_at: "Make water droplets using your hands and mouth",
     phrase: "I will enjoy it without regret!",
+    wb_supertopic: "",
   },
   {
     name: "NICE",
@@ -894,6 +966,7 @@ export const traineesData: ITraineeInfo[] = [
       "Watching movies, playing games, drawing, practicing dancing, and making short videos",
     good_at: "Making monkey noises",
     phrase: "I really want to debut in Korea.",
+    wb_supertopic: "",
   },
   {
     name: "OH SUNG MIN",
@@ -908,6 +981,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "MBTI overimmersion, food tour",
     good_at: "The practice room, the god of organizing the dorm!!",
     phrase: "We will show you a more grown image!!",
+    wb_supertopic: "",
   },
   {
     name: "OLLIE",
@@ -922,6 +996,8 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Watching movies, listening to music, and playing various sports",
     good_at: "rap tone",
     phrase: "I will warm your heart like hot choco.",
+    wb_supertopic:
+      "https://weibo.com/p/100808ec4daaa5111d56ee90f90dd89e018a58/",
   },
   {
     name: "OSUKE",
@@ -937,6 +1013,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Shrink my thumb",
     phrase:
       "I will not forget to thank you and will spare no effort! Go for it!!",
+    wb_supertopic: "",
   },
   {
     name: "OUJU",
@@ -951,6 +1028,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Watch games, anime, and cartoons",
     good_at: "Doraemon Toongtoongi Vocal Imitation",
     phrase: "I’m OUJU! Please look me cute~!",
+    wb_supertopic: "",
   },
   {
     name: "PARK GUN WOOK",
@@ -966,6 +1044,8 @@ export const traineesData: ITraineeInfo[] = [
       "Showing off my forearms, watching soccer, eating chocolate, playing games, and walking",
     good_at: "High pitch",
     phrase: "I will work hard until I can be proud of the name PARK GUN WOOK.",
+    wb_supertopic:
+      "https://weibo.com/p/100808fb63bbe615684df0e39c3bc03f4db6fb/",
   },
   {
     name: "PARK GWAN YOUNG",
@@ -981,6 +1061,7 @@ export const traineesData: ITraineeInfo[] = [
       "Playing games, finding and listening to new songs, reading movie reviews, exploring restaurants, and collecting character props",
     good_at: "Jumping high",
     phrase: "I’ll be working the hardest as this time is the last opportunity.",
+    wb_supertopic: "",
   },
   {
     name: "PARK HAN BIN",
@@ -995,6 +1076,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Reading essay books, walking the Han River, watching movies ^^",
     good_at: "I always smile^^",
     phrase: "I’ll invest everything to BOYS PLANET!!",
+    wb_supertopic: "",
   },
   {
     name: "PARK HYUN BEEN",
@@ -1010,6 +1092,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Lots of personal skills",
     phrase:
       "I will work really hard! Me, PARK HYUN BEEN No one can stop me! Come on!",
+    wb_supertopic: "",
   },
   {
     name: "PARK JI HOO",
@@ -1025,6 +1108,7 @@ export const traineesData: ITraineeInfo[] = [
       "Games, midi, basketball, soccer, exercise, sleeping at home, songwriting",
     good_at: "Dimple",
     phrase: "We will show you everything as much as we have prepared.",
+    wb_supertopic: "",
   },
   {
     name: "PARK MIN SEOK",
@@ -1039,6 +1123,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Cooking, exploring restaurants ^^",
     good_at: "Doing nothing, eating a lot, soft voice",
     phrase: "We will write a new history in ＜BOYS PLANET＞ and K-POP!!!",
+    wb_supertopic: "",
   },
   {
     name: "QIU SHENG YANG",
@@ -1053,6 +1138,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Badminton, dancing, sleeping, and drinking black tea",
     good_at: "Create double eyelids",
     phrase: "I will make a miracle myself!!!!",
+    wb_supertopic: "",
   },
   {
     name: "RICKY",
@@ -1069,6 +1155,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Playing basketball, good sense, no special talent",
     phrase:
       "I am confident in singing, dancing, and rapping. keep your eyes on me, Ricky will show you his own style!",
+    wb_supertopic:
+      "https://weibo.com/p/1008084bb05273e532cbe86fee5aacd31583d7/",
   },
   {
     name: "RIKU",
@@ -1083,6 +1171,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Exercising, playing together, shopping",
     good_at: "Limbo",
     phrase: "I will charm you with a lovely figure.",
+    wb_supertopic: "",
   },
   {
     name: "SEO WON",
@@ -1099,6 +1188,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Good at makeup and calligraphy",
     phrase:
       "SEO WON is coming!! Everyone must be nervous!!! I will work hard, so please look at me pretty~^▽^♡♡♡♡",
+    wb_supertopic:
+      "https://weibo.com/p/10080864c7c6ed9026e7cc8c798f4595b9ef08/",
   },
   {
     name: "SEOK MATTHEW",
@@ -1114,6 +1205,8 @@ export const traineesData: ITraineeInfo[] = [
       "Exercising, playing games, taking a walk, visiting restaurants alone or with friends",
     good_at: "I can fall asleep anywhere in 2 minutes",
     phrase: "I will do it without regret.",
+    wb_supertopic:
+      "https://weibo.com/p/100808641bdb463fd46a4f37b30df1d15b0179/",
   },
   {
     name: "SUNG HAN BIN",
@@ -1128,6 +1221,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Writing, reading, and choreography",
     good_at: "I'm good at using my arms when dancing",
     phrase: "All in. I'll bet my all.",
+    wb_supertopic: "https://weibo.com/p/100808d4f5092bc0e81c5db9942cfdec21c4b7",
   },
   {
     name: "TAKUTO",
@@ -1142,6 +1236,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Reading, cycling and traveling in nature",
     good_at: "Make the belly full",
     phrase: "I don't know yet, but I want to do my best while looking around!",
+    wb_supertopic: "",
   },
   {
     name: "TOUI",
@@ -1156,6 +1251,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Games, fishing, eating delicious food, and singing",
     good_at: "Shaolin Temple",
     phrase: "We will show you a performance that will impress you.",
+    wb_supertopic: "",
   },
   {
     name: "WANG YAN HONG",
@@ -1170,6 +1266,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Playing games, watching cartoons, and watching movies",
     good_at: "Design clothes, play the clarinet",
     phrase: "I will continue to grow with solid basics!",
+    wb_supertopic: "",
   },
   {
     name: "WANG ZI HAO",
@@ -1184,6 +1281,8 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Yoga, listening to music, shopping, playing games",
     good_at: "Crump",
     phrase: "I am ZI HAO who is not afraid of challenges.",
+    wb_supertopic:
+      "https://weibo.com/p/1008081c4cb6343c1b5e61ffbc23ba6aaec80e/",
   },
   {
     name: "WEN YE CHEN",
@@ -1199,6 +1298,8 @@ export const traineesData: ITraineeInfo[] = [
       "Exploring restaurants, listening to music, reading, watching movies and dramas",
     good_at: "musical, acting, and ear movement",
     phrase: "I will become a star with a shining passion.",
+    wb_supertopic:
+      "https://weibo.com/p/100808c40e72f9c961bab31e3151868f547562/",
   },
   {
     name: "WINNIE",
@@ -1214,6 +1315,7 @@ export const traineesData: ITraineeInfo[] = [
       "Watching movies, playing games, drawing with AI, soccer, badminton, singing practice, writing lyrics, learning new skills, and food trips",
     good_at: "Touching the nose with the tongue, and freestyle (dance)",
     phrase: "We will show you strength in kindness!",
+    wb_supertopic: "",
   },
   {
     name: "WUMUTI",
@@ -1228,6 +1330,8 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Drawing, cleaning, bowling, and walking",
     good_at: "Drawing, Timbre",
     phrase: "I tried the hardest in my 23 years of life!",
+    wb_supertopic:
+      "https://weibo.com/p/10080877e2dd95a2f0b990675515aa433fa57d/",
   },
   {
     name: "XUAN HAO",
@@ -1242,6 +1346,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Movies, late night snacks, dances, and songs",
     good_at: "Video editing, leading as a leader",
     phrase: "I will try to become a center of confidence!!!",
+    wb_supertopic: "https://weibo.com/p/1008081172ea20b831d89a7e0c8d91b25c6b98",
   },
   {
     name: "YANG JUN",
@@ -1256,6 +1361,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Exercising, visiting restaurants, and watching movies",
     good_at: "Boxing and table tennis",
     phrase: "I will do my best not to be afraid of mistakes.",
+    wb_supertopic: "",
   },
   {
     name: "YOO SEUNG EON",
@@ -1271,6 +1377,8 @@ export const traineesData: ITraineeInfo[] = [
       "Composition, listening to songs, exercising (soccer, basketball, table tennis, bowling), eating snacks, and playing games",
     good_at: "Doraemon vocal mimicry",
     phrase: "I will do my best to be in the debut group of BOYS PLANET.",
+    wb_supertopic:
+      "https://weibo.com/p/100808ea7b57ad449860cd1b69bd5685b4b69a/",
   },
   {
     name: "YOON JONG WOO",
@@ -1286,6 +1394,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at:
       "Swimming (former athlete), skating (former athlete), choreography creation",
     phrase: "The important thing is an unbreakable heart",
+    wb_supertopic: "",
   },
   {
     name: "YUKI",
@@ -1300,6 +1409,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Video production, screenplay, novel writing",
     good_at: "Finger snap",
     phrase: "元気 やる気 由晖!! I will work hard with passion!",
+    wb_supertopic: "",
   },
   {
     name: "YUTAKA",
@@ -1314,6 +1424,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Collecting figures",
     good_at: "Splits",
     phrase: "I will make people around the world laugh with my voice.",
+    wb_supertopic: "",
   },
   {
     name: "YUTO",
@@ -1328,6 +1439,7 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Dancing, eating ice cream, and watching musical animated movies",
     good_at: "Eating food quickly",
     phrase: 'To others it\'s pow"pow"pow", only to you, bang"bang"bang"!',
+    wb_supertopic: "",
   },
   {
     name: "ZHANG HAO",
@@ -1342,6 +1454,8 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Food tour, swimming, walking, and travel",
     good_at: "Violin, pitch",
     phrase: "Please look forward to the passion of music genius Zhang Hao!",
+    wb_supertopic:
+      "https://weibo.com/p/1008081a8e8c60823b176b6e9f853e041a5a15/",
   },
   {
     name: "ZHANG SHUAI BO",
@@ -1356,5 +1470,6 @@ export const traineesData: ITraineeInfo[] = [
     hobby: "Talking, sleeping, and dazing",
     good_at: "Frog jump",
     phrase: "Go for it",
+    wb_supertopic: "",
   },
 ];

@@ -132,6 +132,10 @@
   color: #888888;
   cursor: pointer;
   transition: transform .2s;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration:none;
 }
 
 .external_link_icon:hover {

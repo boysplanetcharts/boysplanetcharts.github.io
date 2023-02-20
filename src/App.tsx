@@ -6,6 +6,7 @@ import bpLogo from "./assets/boys-planet-logo.png";
 import { useWindowDimensions } from "./hooks/useWindowDimensions";
 import { Footer } from "./components/Footer";
 import { BiSearchAlt, BiLinkExternal } from "react-icons/bi";
+import { RiWeiboFill } from "react-icons/ri";
 
 const LATEST_EP_WITH_RANKINGS = "ep2";
 
@@ -18,6 +19,8 @@ function App() {
   const { isMobileOrTablet } = useWindowDimensions();
   const [hasSearchInput, setHasSearchInput] = useState(false);
   const [showSearchIcon, setShowSearchIcon] = useState(true);
+  // const [supertopicFollowers, setSupertopicFollowers] = useState();
+  // const [loading, setLoading] = useState<boolean>();
 
   const addImgToTraineeArray = (trainees: ITraineeInfo[]) => {
     return trainees.map((trainee) => ({
@@ -105,6 +108,22 @@ function App() {
     [currentTrainee]
   );
 
+  // const getWeiboInfo = async (url?: string) => {
+  //   setLoading(true);
+  //   if (url) {
+  //     axios
+  //       .get(`https://boys-planet-api.onrender.com/wb_followers?url=${url}`, {})
+  //       .then((response) => {
+  //         setSupertopicFollowers(response.data.wb_supertopic);
+  //         setLoading(false);
+  //       })
+  //       .catch((error) => {
+  //         console.error(error);
+  //         setLoading(false);
+  //       });
+  //   }
+  // };
+
   const handleClickTraineeRow = (trainee: ITraineeInfoWithImage) => {
     setCurrentTrainee(trainee);
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -186,8 +205,19 @@ function App() {
                     display: "flex",
                     flex: 1,
                     justifyContent: "flex-end",
+                    gap: 10,
                   }}
                 >
+                  {currentTrainee.wb_supertopic && (
+                    <a
+                      className="external_link_icon"
+                      href={currentTrainee.wb_supertopic}
+                      target="_blank"
+                    >
+                      <RiWeiboFill size={24} />
+                      超话
+                    </a>
+                  )}
                   <a
                     href={`https://service.mnetplus.world/boysplanet/en/artist/${currentTrainee.id}`}
                     target="_blank"
