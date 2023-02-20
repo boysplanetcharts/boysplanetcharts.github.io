@@ -19,7 +19,7 @@ export const Footer = () => {
       </p>
       <p style={{ fontWeight: "bold", fontSize: 10, textAlign: "center" }}>
         If you find any errors or inaccuracies, you can send me a message on{" "}
-        <a target="_blank" href="https://twitter.com/gyuuviins">
+        <a target="_blank" href="https://twitter.com/skawngrazi">
           Twitter
         </a>
       </p>
