@@ -93,8 +93,6 @@ function App() {
         const formattedTraineeName = trainee.name
           .replace(/\s/g, "")
           .toLowerCase();
-        console.log("formmatted1", formattedTraineeName)
-        console.log("formmatted2", formattedInput)
 
         return formattedTraineeName.includes(formattedInput);
       });
