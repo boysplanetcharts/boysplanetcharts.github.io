@@ -81,10 +81,6 @@ function App() {
     );
   };
 
-  const handleTransitionEnd = () => {
-    setShowSearchIcon(!hasSearchInput);
-  };
-
   const handleSearchTrainee = (input: string) => {
     const formattedInput = input.replace(" ", "").toLowerCase();
 
@@ -104,12 +100,15 @@ function App() {
     }
   };
 
-  const TRAINEE_RANK_ARRAY = useMemo(() => [currentTrainee.ep1, currentTrainee.ep2, currentTrainee.ep3], [currentTrainee])
+  const TRAINEE_RANK_ARRAY = useMemo(
+    () => [currentTrainee.ep1, currentTrainee.ep2, currentTrainee.ep3],
+    [currentTrainee]
+  );
 
   const handleClickTraineeRow = (trainee: ITraineeInfoWithImage) => {
     setCurrentTrainee(trainee);
-    window.scrollTo({top: 0, left: 0, behavior: "smooth"})
-  }
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
@@ -297,7 +296,9 @@ function App() {
               <tbody>
                 {filteredTrainees.map((item) => (
                   <tr
-                    onMouseEnter={() => setCurrentTrainee(item)}
+                    onMouseEnter={() =>
+                      !isMobileOrTablet && setCurrentTrainee(item)
+                    }
                     onClick={() => handleClickTraineeRow(item)}
                     key={item.id}
                     style={{
