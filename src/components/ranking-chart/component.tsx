@@ -31,6 +31,7 @@ const CustomizedDot = ({ cx, cy, value, key, stroke }: ICustomizedDot) => {
 
 export const RankingChart = ({ rankings, isGlobal }: IRankingChartData) => {
   // const newRankings = rankings.filter((rank) => rank !== -1);
+  console.log("rankgg", rankings)
   const chartArr = rankings.map((rank, index) => {
     if (rank !== -1) {
       return {
@@ -41,7 +42,7 @@ export const RankingChart = ({ rankings, isGlobal }: IRankingChartData) => {
   });
 
   return (
-    <ResponsiveContainer width={"90%"} height={300}>
+    <ResponsiveContainer key={rankings[0]} width={"90%"} height={300}>
       <LineChart
         data={chartArr.filter(item => item)}
         margin={{
@@ -59,6 +60,7 @@ export const RankingChart = ({ rankings, isGlobal }: IRankingChartData) => {
         />
         <YAxis domain={[0, 100]} reversed tick={false} axisLine={false} />
         <Line
+          key={rankings[0]}
           animationDuration={500}
           dataKey="ranking"
           stroke={isGlobal ? "#fb9fcb" : "#7fcaeb"}
