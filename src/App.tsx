@@ -91,8 +91,10 @@ function App() {
     if (formattedInput) {
       const newTrainees = traineesWithImage.filter((trainee) => {
         const formattedTraineeName = trainee.name
-          .replace(" ", "")
+          .replace(/\s/g, "")
           .toLowerCase();
+        console.log("formmatted1", formattedTraineeName)
+        console.log("formmatted2", formattedInput)
 
         return formattedTraineeName.includes(formattedInput);
       });
