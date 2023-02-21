@@ -875,7 +875,7 @@ export const traineesData: ITraineeInfo[] = [
     star_rank2: 1,
   },
   {
-    name: "LEE HOE TEAK",
+    name: "LEE HOE TAEK",
     group: "K",
     ep1: 6,
     ep2: 6,
