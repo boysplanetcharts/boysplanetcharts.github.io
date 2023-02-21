@@ -33,10 +33,7 @@
   width: 100%;
   overflow: auto;
   height: 400px;
-
 }
-
-
 
 .fixed_header thead tr {
   display: block;
@@ -131,19 +128,19 @@
 .external_link_icon {
   color: #888888;
   cursor: pointer;
-  transition: transform .2s;
+  transition: transform 0.2s;
   display: flex;
   align-items: center;
   font-weight: bold;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .external_link_icon:hover {
-  color: #bbbbbb
+  color: #bbbbbb;
 }
 
 .external_link_icon:hover {
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 
 @-webkit-keyframes pop-in {
