@@ -7,6 +7,8 @@ import { useWindowDimensions } from "./hooks/useWindowDimensions";
 import { Footer } from "./components/Footer";
 import { BiSearchAlt, BiLinkExternal } from "react-icons/bi";
 import { RiWeiboFill } from "react-icons/ri";
+import { MdStars } from "react-icons/md";
+import { BsArrowRightShort } from "react-icons/bs";
 
 const LATEST_EP_WITH_RANKINGS = "ep2";
 
@@ -129,6 +131,51 @@ function App() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
+  const generateTraineeStarRanks = (
+    rank1?: number,
+    rank2?: number,
+    isGlobal?: boolean
+  ) => {
+    const iconColor = isGlobal ? "#e6497c" : "#383d9e";
+
+    if (rank1 !== undefined && rank2 !== undefined) {
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            paddingBottom: 20,
+          }}
+        >
+          {rank1 === 0 ? (
+            <strong
+              style={{ color: iconColor, fontSize: isMobileOrTablet ? 12 : 16 }}
+            >
+              0 STAR
+            </strong>
+          ) : (
+            Array(rank1)
+              .fill(0)
+              .map(() => <MdStars size={18} color={iconColor} />)
+          )}
+          <BsArrowRightShort size={18} />
+          {rank2 === 0 ? (
+            <strong
+              style={{ color: iconColor, fontSize: isMobileOrTablet ? 12 : 16 }}
+            >
+              0 STAR
+            </strong>
+          ) : (
+            Array(rank2)
+              .fill(0)
+              .map(() => <MdStars size={18} color={iconColor} />)
+          )}
+        </div>
+      );
+    }
+  };
+
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <div
@@ -189,7 +236,7 @@ function App() {
                   style={{
                     backgroundColor:
                       currentTrainee.group === "G" ? "#dc7cb0" : "#7fcaeb",
-                    fontSize: isMobileOrTablet ? 14 : 18,
+
                   }}
                   className="trainee_group_circle"
                 >
@@ -213,8 +260,9 @@ function App() {
                       className="external_link_icon"
                       href={currentTrainee.wb_supertopic}
                       target="_blank"
+                      style={{ fontSize: isMobileOrTablet ? 12 : 18 }}
                     >
-                      <RiWeiboFill size={24} />
+                      <RiWeiboFill size={isMobileOrTablet ? 18 : 24} />
                       超话
                     </a>
                   )}
@@ -222,10 +270,18 @@ function App() {
                     href={`https://service.mnetplus.world/boysplanet/en/artist/${currentTrainee.id}`}
                     target="_blank"
                   >
-                    <BiLinkExternal className="external_link_icon" size={24} />
+                    <BiLinkExternal
+                      size={isMobileOrTablet ? 18 : 24}
+                      className="external_link_icon"
+                    />
                   </a>
                 </div>
               </div>
+              {generateTraineeStarRanks(
+                currentTrainee?.star_rank1,
+                currentTrainee?.star_rank2,
+                currentTrainee.group === "G"
+              )}
               <div
                 style={{
                   display: "flex",
