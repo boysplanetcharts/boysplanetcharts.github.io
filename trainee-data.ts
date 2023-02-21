@@ -16,6 +16,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I will become an idol that makes you happy when you see it!!!",
     wb_supertopic:
       "https://weibo.com/p/10080820c37e880f3c4a53ca96cb00300ef8f7/super_index",
+    star_rank1: 3,
+    star_rank2: 3,
   },
   {
     name: "BAK DO HA",
@@ -31,6 +33,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Bass rap",
     phrase: "I’ll spend the most valuable time than others.",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 0,
   },
   {
     name: "BRIAN",
@@ -46,6 +50,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Reverse thumb knuckle fold",
     phrase: "I’ll do my best. I’ll do my best.",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 1,
   },
   {
     name: "CAI JIN XIN",
@@ -63,6 +69,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "Let's do our best to enjoy the process rather than the result with a positive mind",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 0,
   },
   {
     name: "CHA WOONG KI",
@@ -78,6 +86,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Do imagination!! Don't get knocked down♡_♡",
     phrase: "It starts now, CHA WOONG KI! Go for it! ><",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 2,
   },
   {
     name: "CHEN JIAN YU",
@@ -96,6 +106,8 @@ export const traineesData: ITraineeInfo[] = [
       "I want to become a great person who proves my potential through blood and sweat.",
     wb_supertopic:
       "https://weibo.com/p/100808acc06f66a099d1e240b4d22ad4a9ae76/",
+    star_rank1: 1,
+    star_rank2: 1,
   },
   {
     name: "CHEN KUAN JUI",
@@ -112,6 +124,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I'm here for my debut, so please wait a little longer♥",
     wb_supertopic:
       "https://weibo.com/p/100808bc8e8f50a5f6c2aa2595a2842a330775/",
+    star_rank1: 4,
+    star_rank2: 3,
   },
   {
     name: "CHEN LIANG",
@@ -127,6 +141,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Surfing, yo-yo",
     phrase: "I won't stop again, I want to fly high~",
     wb_supertopic: "",
+    star_rank1: undefined,
+    star_rank2: 0,
   },
   {
     name: "CHEN REN YOU",
@@ -142,6 +158,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I sing a good ballad",
     phrase: "I’ll do my best.",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 1,
   },
   {
     name: "CHEN YU GENG",
@@ -157,6 +175,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Rotate the arm 360 degrees",
     phrase: "Let's work together and have fun together on stage!",
     wb_supertopic: "",
+    star_rank1: undefined,
+    star_rank2: undefined,
   },
   {
     name: "CHOI JI HO",
@@ -174,6 +194,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I'll show you everything I've prepared and I will make a stage for BOYS PLANET Legend!!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 2,
   },
   {
     name: "CHOI SEUNG HUN",
@@ -189,6 +211,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Dad joke",
     phrase: "I'm not good enough, but I'll do my best.",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 0,
   },
   {
     name: "CHOI WOO JIN",
@@ -204,6 +228,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Take a photo",
     phrase: "I’ll do my best every time for not regretting.",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 1,
   },
   {
     name: "CONG",
@@ -219,6 +245,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Acting cute",
     phrase: "Debut fighting",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 3,
   },
   {
     name: "DANG HONG HAI",
@@ -236,6 +264,8 @@ export const traineesData: ITraineeInfo[] = [
       "I will break the stage with my skills and passion, so please watch over me!",
     wb_supertopic:
       "https://weibo.com/p/1008087944992310ce8d17cce4d0cb5a6bbeb5/",
+    star_rank1: 2,
+    star_rank2: 3,
   },
   {
     name: "DONG DONG",
@@ -251,6 +281,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "low-pitched voice",
     phrase: "I'll show you the perfect look in any situation! '◡'",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 1,
   },
   {
     name: "FENG JUN LAN",
@@ -266,6 +298,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "yo-yo, computer game, basketball",
     phrase: "I'm here to take over ＜BOYS PLANET＞!!!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 2,
   },
   {
     name: "HAN SEO BIN",
@@ -282,6 +316,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Utmost gag skill",
     phrase: "I've done my best I’ll show you everything I've practiced...^▽^",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 3,
   },
   {
     name: "HAN YU JIN",
@@ -298,6 +334,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "Please look forward to it since I’m still growing in stature and improving my skill.",
     wb_supertopic: "https://weibo.com/p/1008086f4b27d8c665341e1c211ca7b940a61b",
+    star_rank1: 4,
+    star_rank2: 3,
   },
   {
     name: "HAN YU SEOP",
@@ -313,6 +351,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Guitar",
     phrase: "I will quench your thirst with my refreshing dance and songs!!",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 2,
   },
   {
     name: "HARU",
@@ -328,6 +368,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Stitch vocal cord imitation",
     phrase: "You will only look at me",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 2,
   },
   {
     name: "HARUTO",
@@ -343,6 +385,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Wrist clap",
     phrase: "I am the seed, you are my water",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 4,
   },
   {
     name: "HIROTO",
@@ -359,6 +403,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I must debut!!!!!!!",
     wb_supertopic:
       "https://weibo.com/p/10080874a9ff6408bcd1cd51d6831818ff09bb/",
+    star_rank1: 2,
+    star_rank2: 2,
   },
   {
     name: "HONG KEON HEE",
@@ -375,6 +421,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I’ll show you the legendary performance in every stage so that you will love me the most!!",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 3,
   },
   {
     name: "HYO",
@@ -390,6 +438,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Wiggling the pupils",
     phrase: "I’ll keep focusing on debut!!",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 2,
   },
   {
     name: "ICHIKA",
@@ -405,6 +455,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Power of practice and power of action",
     phrase: "I'll show you the look of human victory!!",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 0,
   },
   {
     name: "ITSUKI",
@@ -420,6 +472,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Voice imitation of Spirited Away 'Kashira'",
     phrase: "I'll show you a cool image with own confidence.",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: undefined,
   },
   {
     name: "JANG JI HO",
@@ -435,6 +489,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Rolling over the bed all day long lol",
     phrase: "I’ll make you think the person, Jiho all the time.",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 2,
   },
   {
     name: "JANG YEO JUN",
@@ -450,6 +506,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Flexible cheek meet",
     phrase: "I will never miss this precious opportunity!",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 2,
   },
   {
     name: "JAY",
@@ -466,6 +524,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Playing drums with left hand",
     phrase: "I will think of BOYS PLANET as my last chance and work hard!",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 4,
   },
   {
     name: "JEON HO YOUNG",
@@ -482,6 +542,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Waving with eyebrows",
     phrase: "I’ll be the best!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 1,
   },
   {
     name: "JEON WOO SEOK",
@@ -497,6 +559,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I have fast feet",
     phrase: "Dream comes true☆",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 2,
   },
   {
     name: "JEONG I CHAN",
@@ -512,6 +576,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I can make a song! ><",
     phrase: "I’ll always do my best in every time!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 2,
   },
   {
     name: "JI YUN SEO",
@@ -529,6 +595,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "Until it doesn't work, if there are no teeth, with the gums. Fire~!",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 3,
   },
   {
     name: "JUNG HO JIN",
@@ -547,6 +615,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I will definitely fulfill my dream of debuting and give you lots of bright energy!",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 1,
   },
   {
     name: "JUNG MIN GYU",
@@ -563,6 +633,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Quickly change facial expressions",
     phrase: "Do my best as today is the last day of my life!",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 0,
   },
   {
     name: "JUNG SE YUN",
@@ -580,6 +652,8 @@ export const traineesData: ITraineeInfo[] = [
       "Kneeling, pretending to be a praying mantis, and putting bottle caps on your eyes",
     phrase: "I’ll be the person who can resonate your heart!",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 0,
   },
   {
     name: "KEI",
@@ -596,6 +670,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Making fun face",
     phrase: "I will run with all my might to make my dream come true!!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: undefined,
   },
   {
     name: "KEITA",
@@ -611,6 +687,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I can sleep for 3 days in a row",
     phrase: "Keita will be in charge of BOYS PLANET's K-Pop!!",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 4,
   },
   {
     name: "KIM GYU VIN",
@@ -629,6 +707,8 @@ export const traineesData: ITraineeInfo[] = [
       "I worked harder than anyone else and eventually debuted in BOYS PLANET",
     wb_supertopic:
       "https://weibo.com/p/10080847abc643ff266e5c5df69f48651256f2/",
+    star_rank1: 4,
+    star_rank2: 3,
   },
   {
     name: "KIM JI WOONG",
@@ -645,6 +725,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I’ll do my best.",
     wb_supertopic:
       "https://weibo.com/p/100808193905d012a974d6716125cad24f9554/",
+    star_rank1: 3,
+    star_rank2: 3,
   },
   {
     name: "KIM MIN HYUK",
@@ -660,6 +742,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Eloquence",
     phrase: "I’m sure I’ll do my best than anyone!!!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 3,
   },
   {
     name: "KIM MIN SEOUNG",
@@ -677,6 +761,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I will fight with the determination to die so that I will not leave even 1mm of regret.",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: undefined,
   },
   {
     name: "KIM TAE RAE",
@@ -692,6 +778,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Create lip triangles and add chords to songs",
     phrase: "I will advance to a debut position as high as my high treble!!",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 4,
   },
   {
     name: "KRYSTIAN",
@@ -709,6 +797,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I will repay you with a shining stage.",
     wb_supertopic:
       "https://weibo.com/p/100808711af677083e3753a4f87a11f8ca815e/",
+    star_rank1: 2,
+    star_rank2: 2,
   },
   {
     name: "KUM JUN HYEON",
@@ -724,6 +814,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I’m good at doing a diet",
     phrase: "I will do my best not to disappoint you.",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 4,
   },
   {
     name: "LEE DA EUL",
@@ -742,6 +834,8 @@ export const traineesData: ITraineeInfo[] = [
       "It’s your choice to fall in love with my charming point but it’s hard to get out of here.",
     wb_supertopic:
       "https://weibo.com/p/10080809e9b8e69255e99f2d73e391d7e361b5/",
+    star_rank1: 2,
+    star_rank2: 0,
   },
   {
     name: "LEE DONG GUN",
@@ -759,6 +853,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I will work hard so that my bright smile and hopeful energy can settle in your hearts! Ha-ha",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 2,
   },
   {
     name: "LEE DONG YEOL",
@@ -775,6 +871,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Lips get bigger when you wake upor eat spicy food",
     phrase: "I’ll be the person that people want to keep watching!!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 1,
   },
   {
     name: "LEE HOE TEAK",
@@ -792,6 +890,8 @@ export const traineesData: ITraineeInfo[] = [
       "It’s a challenge but since I've started this challenge, I’ll make a good result.",
     wb_supertopic:
       "https://weibo.com/p/100808dd453ff6b54c4bb243773a0d35e09d17/",
+    star_rank1: 4,
+    star_rank2: 3,
   },
   {
     name: "LEE HWAN HEE",
@@ -808,6 +908,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Blocking nostril one side without using my hands…♡",
     phrase: "I will show you Hwanhee who is good at having fun♡",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 1,
   },
   {
     name: "LEE JEONG HYEON",
@@ -825,6 +927,8 @@ export const traineesData: ITraineeInfo[] = [
       "I’ll show all the things that I’ve got such as skills or charming!",
     wb_supertopic:
       "https://weibo.com/p/100808752700df8c27b527fb740f41166801d1/",
+    star_rank1: 3,
+    star_rank2: 3,
   },
   {
     name: "LEE SEUNG HWAN",
@@ -842,6 +946,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "Even if I can't fly high, I'll fly far!",
     wb_supertopic:
       "https://weibo.com/p/100808e60f4d7ecab7f6460b6d2157092d61c9/",
+    star_rank1: 2,
+    star_rank2: 3,
   },
   {
     name: "LEE YE DAM",
@@ -858,6 +964,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I can see my future over there. I’ll keep going higher and higher until I can get that future!",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 4,
   },
   {
     name: "LIM JUN SEO",
@@ -873,6 +981,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Moving ears",
     phrase: "＜BOYS PLANET＞, wait and see. LIM JUN SEO is going.",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 1,
   },
   {
     name: "LIN SHI YUAN",
@@ -888,6 +998,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Acrobatic",
     phrase: "I will definitely enter the lucky number '7'.",
     wb_supertopic: "",
+    star_rank1: undefined,
+    star_rank2: undefined,
   },
   {
     name: "MA JING XIANG",
@@ -904,6 +1016,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "If you practice a lot, you won't be nervous. To the top JING XIANG. Please remember my name!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 0,
   },
   {
     name: "MIN",
@@ -919,6 +1033,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Sing whistle, hand wave",
     phrase: "Let’s go MIN",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 3,
   },
   {
     name: "MUN JONG HYUN",
@@ -936,6 +1052,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I will show you the tension of the other world that no one has been able to handle yet.",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 4,
   },
   {
     name: "NA KAMDEN",
@@ -951,6 +1069,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Make water droplets using your hands and mouth",
     phrase: "I will enjoy it without regret!",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 3,
   },
   {
     name: "NICE",
@@ -967,6 +1087,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Making monkey noises",
     phrase: "I really want to debut in Korea.",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 0,
   },
   {
     name: "OH SUNG MIN",
@@ -982,6 +1104,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "The practice room, the god of organizing the dorm!!",
     phrase: "We will show you a more grown image!!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 3,
   },
   {
     name: "OLLIE",
@@ -998,6 +1122,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I will warm your heart like hot choco.",
     wb_supertopic:
       "https://weibo.com/p/100808ec4daaa5111d56ee90f90dd89e018a58/",
+    star_rank1: 3,
+    star_rank2: 0,
   },
   {
     name: "OSUKE",
@@ -1014,6 +1140,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I will not forget to thank you and will spare no effort! Go for it!!",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 2,
   },
   {
     name: "OUJU",
@@ -1029,6 +1157,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Doraemon Toongtoongi Vocal Imitation",
     phrase: "I’m OUJU! Please look me cute~!",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 2,
   },
   {
     name: "PARK GUN WOOK",
@@ -1046,6 +1176,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I will work hard until I can be proud of the name PARK GUN WOOK.",
     wb_supertopic:
       "https://weibo.com/p/100808fb63bbe615684df0e39c3bc03f4db6fb/",
+    star_rank1: 3,
+    star_rank2: 4,
   },
   {
     name: "PARK GWAN YOUNG",
@@ -1062,6 +1194,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Jumping high",
     phrase: "I’ll be working the hardest as this time is the last opportunity.",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 2,
   },
   {
     name: "PARK HAN BIN",
@@ -1077,6 +1211,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I always smile^^",
     phrase: "I’ll invest everything to BOYS PLANET!!",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 4,
   },
   {
     name: "PARK HYUN BEEN",
@@ -1093,6 +1229,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase:
       "I will work really hard! Me, PARK HYUN BEEN No one can stop me! Come on!",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 3,
   },
   {
     name: "PARK JI HOO",
@@ -1109,6 +1247,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Dimple",
     phrase: "We will show you everything as much as we have prepared.",
     wb_supertopic: "",
+    star_rank1: 4,
+    star_rank2: 3,
   },
   {
     name: "PARK MIN SEOK",
@@ -1124,6 +1264,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Doing nothing, eating a lot, soft voice",
     phrase: "We will write a new history in ＜BOYS PLANET＞ and K-POP!!!",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 1,
   },
   {
     name: "QIU SHENG YANG",
@@ -1139,6 +1281,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Create double eyelids",
     phrase: "I will make a miracle myself!!!!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 1,
   },
   {
     name: "RICKY",
@@ -1157,6 +1301,8 @@ export const traineesData: ITraineeInfo[] = [
       "I am confident in singing, dancing, and rapping. keep your eyes on me, Ricky will show you his own style!",
     wb_supertopic:
       "https://weibo.com/p/1008084bb05273e532cbe86fee5aacd31583d7/",
+    star_rank1: 3,
+    star_rank2: 2,
   },
   {
     name: "RIKU",
@@ -1172,6 +1318,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Limbo",
     phrase: "I will charm you with a lovely figure.",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 2,
   },
   {
     name: "SEO WON",
@@ -1190,6 +1338,8 @@ export const traineesData: ITraineeInfo[] = [
       "SEO WON is coming!! Everyone must be nervous!!! I will work hard, so please look at me pretty~^▽^♡♡♡♡",
     wb_supertopic:
       "https://weibo.com/p/10080864c7c6ed9026e7cc8c798f4595b9ef08/",
+    star_rank1: 3,
+    star_rank2: 4,
   },
   {
     name: "SEOK MATTHEW",
@@ -1207,6 +1357,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I will do it without regret.",
     wb_supertopic:
       "https://weibo.com/p/100808641bdb463fd46a4f37b30df1d15b0179/",
+    star_rank1: 3,
+    star_rank2: 4,
   },
   {
     name: "SUNG HAN BIN",
@@ -1222,6 +1374,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "I'm good at using my arms when dancing",
     phrase: "All in. I'll bet my all.",
     wb_supertopic: "https://weibo.com/p/100808d4f5092bc0e81c5db9942cfdec21c4b7",
+    star_rank1: 3,
+    star_rank2: 4,
   },
   {
     name: "TAKUTO",
@@ -1237,6 +1391,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Make the belly full",
     phrase: "I don't know yet, but I want to do my best while looking around!",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 1,
   },
   {
     name: "TOUI",
@@ -1252,6 +1408,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Shaolin Temple",
     phrase: "We will show you a performance that will impress you.",
     wb_supertopic: "",
+    star_rank1: undefined,
+    star_rank2: 1,
   },
   {
     name: "WANG YAN HONG",
@@ -1267,6 +1425,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Design clothes, play the clarinet",
     phrase: "I will continue to grow with solid basics!",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 0,
   },
   {
     name: "WANG ZI HAO",
@@ -1283,6 +1443,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I am ZI HAO who is not afraid of challenges.",
     wb_supertopic:
       "https://weibo.com/p/1008081c4cb6343c1b5e61ffbc23ba6aaec80e/",
+    star_rank1: 3,
+    star_rank2: 4,
   },
   {
     name: "WEN YE CHEN",
@@ -1300,6 +1462,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I will become a star with a shining passion.",
     wb_supertopic:
       "https://weibo.com/p/100808c40e72f9c961bab31e3151868f547562/",
+    star_rank1: 1,
+    star_rank2: 0,
   },
   {
     name: "WINNIE",
@@ -1316,6 +1480,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Touching the nose with the tongue, and freestyle (dance)",
     phrase: "We will show you strength in kindness!",
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: 1,
   },
   {
     name: "WUMUTI",
@@ -1332,6 +1498,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I tried the hardest in my 23 years of life!",
     wb_supertopic:
       "https://weibo.com/p/10080877e2dd95a2f0b990675515aa433fa57d/",
+    star_rank1: 2,
+    star_rank2: 3,
   },
   {
     name: "XUAN HAO",
@@ -1347,6 +1515,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Video editing, leading as a leader",
     phrase: "I will try to become a center of confidence!!!",
     wb_supertopic: "https://weibo.com/p/1008081172ea20b831d89a7e0c8d91b25c6b98",
+    star_rank1: 1,
+    star_rank2: 1,
   },
   {
     name: "YANG JUN",
@@ -1362,6 +1532,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Boxing and table tennis",
     phrase: "I will do my best not to be afraid of mistakes.",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 0,
   },
   {
     name: "YOO SEUNG EON",
@@ -1379,6 +1551,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "I will do my best to be in the debut group of BOYS PLANET.",
     wb_supertopic:
       "https://weibo.com/p/100808ea7b57ad449860cd1b69bd5685b4b69a/",
+    star_rank1: 4,
+    star_rank2: 3,
   },
   {
     name: "YOON JONG WOO",
@@ -1395,6 +1569,8 @@ export const traineesData: ITraineeInfo[] = [
       "Swimming (former athlete), skating (former athlete), choreography creation",
     phrase: "The important thing is an unbreakable heart",
     wb_supertopic: "",
+    star_rank1: 3,
+    star_rank2: 1,
   },
   {
     name: "YUKI",
@@ -1410,6 +1586,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Finger snap",
     phrase: "元気 やる気 由晖!! I will work hard with passion!",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 1,
   },
   {
     name: "YUTAKA",
@@ -1425,6 +1603,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Splits",
     phrase: "I will make people around the world laugh with my voice.",
     wb_supertopic: "",
+    star_rank1: 0,
+    star_rank2: 1,
   },
   {
     name: "YUTO",
@@ -1440,6 +1620,8 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Eating food quickly",
     phrase: 'To others it\'s pow"pow"pow", only to you, bang"bang"bang"!',
     wb_supertopic: "",
+    star_rank1: 2,
+    star_rank2: undefined,
   },
   {
     name: "ZHANG HAO",
@@ -1456,6 +1638,8 @@ export const traineesData: ITraineeInfo[] = [
     phrase: "Please look forward to the passion of music genius Zhang Hao!",
     wb_supertopic:
       "https://weibo.com/p/1008081a8e8c60823b176b6e9f853e041a5a15/",
+    star_rank1: 4,
+    star_rank2: 4,
   },
   {
     name: "ZHANG SHUAI BO",
@@ -1471,5 +1655,7 @@ export const traineesData: ITraineeInfo[] = [
     good_at: "Frog jump",
     phrase: "Go for it",
     wb_supertopic: "",
+    star_rank1: 1,
+    star_rank2: 1,
   },
 ];
