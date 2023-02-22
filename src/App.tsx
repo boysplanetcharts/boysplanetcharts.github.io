@@ -362,7 +362,7 @@ function App() {
                 className="search_bar_input"
                 type="text"
                 onChange={(evt) => handleSearchTrainee(evt.target.value)}
-                placeholder="Search for you trainee!"
+                placeholder="Search for your trainee!"
               />
             </div>
           </div>
