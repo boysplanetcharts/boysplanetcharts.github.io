@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { traineesData } from "../trainee-data";
 import { RankingChart } from "./components/ranking-chart";
 import { ITraineeInfo, ITraineeInfoWithImage } from "./types";
@@ -10,6 +10,8 @@ import { RiWeiboFill } from "react-icons/ri";
 import { MdStars } from "react-icons/md";
 import { BsArrowRightShort } from "react-icons/bs";
 
+import * as amplitude from "@amplitude/analytics-browser";
+
 const LATEST_EP_WITH_RANKINGS = "ep2";
 
 function getImageUrl(traineeId: number) {
@@ -19,10 +21,13 @@ function getImageUrl(traineeId: number) {
 
 function App() {
   const { isMobileOrTablet } = useWindowDimensions();
-  const [hasSearchInput, setHasSearchInput] = useState(false);
-  const [showSearchIcon, setShowSearchIcon] = useState(true);
+
   // const [supertopicFollowers, setSupertopicFollowers] = useState();
   // const [loading, setLoading] = useState<boolean>();
+
+  useEffect(() => {
+    amplitude.init(import.meta.env.VITE_AMPLITUDE_KEY);
+  }, []);
 
   const addImgToTraineeArray = (trainees: ITraineeInfo[]) => {
     return trainees.map((trainee) => ({
@@ -97,10 +102,8 @@ function App() {
 
         return formattedTraineeName.includes(formattedInput);
       });
-      setHasSearchInput(true);
       setFilteredTrainees(newTrainees);
     } else {
-      setHasSearchInput(false);
       setFilteredTrainees(traineesWithImage);
     }
   };
@@ -129,6 +132,7 @@ function App() {
   const handleClickTraineeRow = (trainee: ITraineeInfoWithImage) => {
     setCurrentTrainee(trainee);
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    amplitude.track("Trainee Row Clicked", trainee);
   };
 
   const generateTraineeStarRanks = (
@@ -236,7 +240,6 @@ function App() {
                   style={{
                     backgroundColor:
                       currentTrainee.group === "G" ? "#dc7cb0" : "#7fcaeb",
-
                   }}
                   className="trainee_group_circle"
                 >
@@ -259,6 +262,9 @@ function App() {
                     <a
                       className="external_link_icon"
                       href={currentTrainee.wb_supertopic}
+                      onClick={() =>
+                        amplitude.track("Weibo Supertopic Clicked", currentTrainee)
+                      }
                       target="_blank"
                       style={{ fontSize: isMobileOrTablet ? 12 : 18 }}
                     >
@@ -269,6 +275,9 @@ function App() {
                   <a
                     href={`https://service.mnetplus.world/boysplanet/en/artist/${currentTrainee.id}`}
                     target="_blank"
+                    onClick={() =>
+                      amplitude.track("Trainee Mnet Profile Clicked", currentTrainee)
+                    }
                   >
                     <BiLinkExternal
                       size={isMobileOrTablet ? 18 : 24}
