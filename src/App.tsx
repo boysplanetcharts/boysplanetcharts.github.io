@@ -132,7 +132,6 @@ function App() {
   const handleClickTraineeRow = (trainee: ITraineeInfoWithImage) => {
     setCurrentTrainee(trainee);
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    amplitude.track("Trainee Row Clicked", trainee);
   };
 
   const handleMouseEnterTraineeRow = (trainee: ITraineeInfoWithImage) => {
