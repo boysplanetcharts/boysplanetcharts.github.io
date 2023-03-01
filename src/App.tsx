@@ -135,6 +135,11 @@ function App() {
     amplitude.track("Trainee Row Clicked", trainee);
   };
 
+  const handleMouseEnterTraineeRow = (trainee: ITraineeInfoWithImage) => {
+    !isMobileOrTablet && setCurrentTrainee(trainee);
+    amplitude.track("Trainee Row Mouse Enter", trainee);
+  };
+
   const generateTraineeStarRanks = (
     rank1?: number,
     rank2?: number,
@@ -263,7 +268,10 @@ function App() {
                       className="external_link_icon"
                       href={currentTrainee.wb_supertopic}
                       onClick={() =>
-                        amplitude.track("Weibo Supertopic Clicked", currentTrainee)
+                        amplitude.track(
+                          "Weibo Supertopic Clicked",
+                          currentTrainee
+                        )
                       }
                       target="_blank"
                       style={{ fontSize: isMobileOrTablet ? 12 : 18 }}
@@ -276,7 +284,10 @@ function App() {
                     href={`https://service.mnetplus.world/boysplanet/en/artist/${currentTrainee.id}`}
                     target="_blank"
                     onClick={() =>
-                      amplitude.track("Trainee Mnet Profile Clicked", currentTrainee)
+                      amplitude.track(
+                        "Trainee Mnet Profile Clicked",
+                        currentTrainee
+                      )
                     }
                   >
                     <BiLinkExternal
@@ -391,9 +402,7 @@ function App() {
               <tbody>
                 {filteredTrainees.map((item) => (
                   <tr
-                    onMouseEnter={() =>
-                      !isMobileOrTablet && setCurrentTrainee(item)
-                    }
+                    onMouseEnter={() => handleMouseEnterTraineeRow(item)}
                     onClick={() => handleClickTraineeRow(item)}
                     key={item.id}
                     style={{
