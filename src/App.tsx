@@ -12,7 +12,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 import * as amplitude from "@amplitude/analytics-browser";
 
-const LATEST_EP_WITH_RANKINGS = "ep2";
+const LATEST_EP_WITH_RANKINGS = "ep5";
 
 function getImageUrl(traineeId: number) {
   return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url)
@@ -47,14 +47,21 @@ function App() {
     return "";
   };
 
-  const traineesSortedByMostRecentRank = useMemo(
-    () =>
-      traineesData.sort(
-        (item1, item2) =>
-          item1[LATEST_EP_WITH_RANKINGS] - item2[LATEST_EP_WITH_RANKINGS]
-      ),
-    [traineesData]
-  );
+  const traineesSortedByMostRecentRank = useMemo(() => {
+    const eliminatedTrainees = traineesData.filter(
+      (trainee) => trainee[LATEST_EP_WITH_RANKINGS] === -1
+    );
+    const survivedTrainees = traineesData.filter(
+      (trainee) => trainee[LATEST_EP_WITH_RANKINGS] !== -1
+    );
+
+    survivedTrainees.sort(
+      (item1, item2) =>
+        item1[LATEST_EP_WITH_RANKINGS] - item2[LATEST_EP_WITH_RANKINGS]
+    );
+
+    return [...survivedTrainees, ...eliminatedTrainees];
+  }, [traineesData]);
 
   const traineesWithImage: ITraineeInfoWithImage[] = useMemo(
     () => addImgToTraineeArray(traineesSortedByMostRecentRank),
@@ -109,7 +116,13 @@ function App() {
   };
 
   const TRAINEE_RANK_ARRAY = useMemo(
-    () => [currentTrainee.ep1, currentTrainee.ep2, currentTrainee.ep3],
+    () => [
+      currentTrainee.ep1,
+      currentTrainee.ep2,
+      currentTrainee.ep3,
+      -1,
+      currentTrainee.ep5,
+    ],
     [currentTrainee]
   );
 
@@ -352,6 +365,12 @@ function App() {
                     <b style={{ color: "#5a5a5a" }}>Specialty:</b>{" "}
                     {currentTrainee.good_at}
                   </p>
+                  {currentTrainee.eliminated_ep && (
+                    <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
+                      <b style={{ color: "#5a5a5a" }}>Eliminated in EP:</b>{" "}
+                      {currentTrainee.eliminated_ep}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
@@ -396,6 +415,7 @@ function App() {
                   <th>EP 1</th>
                   <th>EP 2</th>
                   <th>EP 3</th>
+                  <th>EP 5</th>
                 </tr>
               </thead>
               <tbody>
@@ -430,6 +450,16 @@ function App() {
                       <div className="ranking_div">
                         {generateRankDifference(item.ep2, item.ep3)}
                         <p>{item.ep3 === -1 ? "-" : item.ep3}</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div className="ranking_div">
+                        {generateRankDifference(
+                          item.ep3 === -1 ? item.ep2 : item.ep3,
+                          item.ep5
+                        )}
+                        <p>{item.ep5 === -1 ? "-" : item.ep5}</p>
                       </div>
                     </td>
                   </tr>

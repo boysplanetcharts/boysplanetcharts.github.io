@@ -4,6 +4,7 @@ export interface ITraineeInfo {
   ep1: number;
   ep2: number;
   ep3: number;
+  ep5: number;
   company: string;
   dob: number;
   id: number;
@@ -14,6 +15,7 @@ export interface ITraineeInfo {
   wb_supertopic?: string;
   star_rank1?: number;
   star_rank2?: number;
+  eliminated_ep?: number;
 }
 
 export interface ITraineeInfoWithImage extends ITraineeInfo {
