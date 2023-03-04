@@ -1,6 +1,6 @@
 import { ITraineeInfo } from "./src/types";
 
-export const traineesData: ITraineeInfo[] = [
+export const traineesData: ITraineeInfo[] =   [
   {
     name: "ANTHONNY",
     group: "G",
@@ -19,7 +19,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/10080820c37e880f3c4a53ca96cb00300ef8f7/super_index",
     star_rank1: 3,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "BAK DO HA",
@@ -38,7 +38,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 0,
     star_rank2: 0,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "BRIAN",
@@ -57,13 +57,13 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 3,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "CAI JIN XIN",
     group: "G",
     ep1: 42,
-    ep2: 46,
+    ep2: 45,
     ep3: 47,
     ep5: 50,
     company: "TOPCLASS Entertainment",
@@ -78,7 +78,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 0,
     star_rank2: 0,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "CHA WOONG KI",
@@ -97,7 +97,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 1,
     star_rank2: 2,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "CHEN JIAN YU",
@@ -119,7 +119,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808acc06f66a099d1e240b4d22ad4a9ae76/",
     star_rank1: 1,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "CHEN KUAN JUI",
@@ -139,7 +139,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808bc8e8f50a5f6c2aa2595a2842a330775/",
     star_rank1: 4,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "CHEN LIANG",
@@ -255,7 +255,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 3,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "CONG",
@@ -274,7 +274,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 1,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "DANG HONG HAI",
@@ -295,7 +295,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/1008087944992310ce8d17cce4d0cb5a6bbeb5/",
     star_rank1: 2,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "DONG DONG",
@@ -373,7 +373,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "https://weibo.com/p/1008086f4b27d8c665341e1c211ca7b940a61b",
     star_rank1: 4,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "HAN YU SEOP",
@@ -430,7 +430,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "HIROTO",
@@ -450,7 +450,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/10080874a9ff6408bcd1cd51d6831818ff09bb/",
     star_rank1: 2,
     star_rank2: 2,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "HONG KEON HEE",
@@ -585,7 +585,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "JEON HO YOUNG",
@@ -643,7 +643,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 2,
     star_rank2: 2,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "JI YUN SEO",
@@ -664,7 +664,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "JUNG HO JIN",
@@ -706,7 +706,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 0,
     star_rank2: 0,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "JUNG SE YUN",
@@ -766,7 +766,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "KIM GYU VIN",
@@ -788,7 +788,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/10080847abc643ff266e5c5df69f48651256f2/",
     star_rank1: 4,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "KIM JI WOONG",
@@ -808,7 +808,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808193905d012a974d6716125cad24f9554/",
     star_rank1: 3,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "KIM MIN HYUK",
@@ -867,7 +867,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "KRYSTIAN",
@@ -888,7 +888,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808711af677083e3753a4f87a11f8ca815e/",
     star_rank1: 2,
     star_rank2: 2,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "KUM JUN HYEON",
@@ -907,7 +907,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LEE DA EUL",
@@ -929,7 +929,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/10080809e9b8e69255e99f2d73e391d7e361b5/",
     star_rank1: 2,
     star_rank2: 0,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LEE DONG GUN",
@@ -950,7 +950,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 1,
     star_rank2: 2,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LEE DONG YEOL",
@@ -970,7 +970,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 2,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LEE HOE TAEK",
@@ -991,7 +991,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808dd453ff6b54c4bb243773a0d35e09d17/",
     star_rank1: 4,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LEE HWAN HEE",
@@ -1011,7 +1011,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 3,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LEE JEONG HYEON",
@@ -1032,7 +1032,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808752700df8c27b527fb740f41166801d1/",
     star_rank1: 3,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LEE SEUNG HWAN",
@@ -1053,7 +1053,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808e60f4d7ecab7f6460b6d2157092d61c9/",
     star_rank1: 2,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LEE YE DAM",
@@ -1073,7 +1073,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LIM JUN SEO",
@@ -1092,7 +1092,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 2,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "LIN SHI YUAN",
@@ -1131,7 +1131,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 2,
     star_rank2: 0,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "MIN",
@@ -1171,7 +1171,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "NA KAMDEN",
@@ -1190,7 +1190,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 3,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "NICE",
@@ -1229,7 +1229,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 2,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "OLLIE",
@@ -1249,7 +1249,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808ec4daaa5111d56ee90f90dd89e018a58/",
     star_rank1: 3,
     star_rank2: 0,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "OSUKE",
@@ -1309,7 +1309,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808fb63bbe615684df0e39c3bc03f4db6fb/",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "PARK GWAN YOUNG",
@@ -1348,7 +1348,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "PARK HYUN BEEN",
@@ -1368,7 +1368,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 3,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "PARK JI HOO",
@@ -1388,7 +1388,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "PARK MIN SEOK",
@@ -1448,7 +1448,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/1008084bb05273e532cbe86fee5aacd31583d7/",
     star_rank1: 3,
     star_rank2: 2,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "RIKU",
@@ -1489,7 +1489,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/10080864c7c6ed9026e7cc8c798f4595b9ef08/",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "SEOK MATTHEW",
@@ -1510,7 +1510,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808641bdb463fd46a4f37b30df1d15b0179/",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "SUNG HAN BIN",
@@ -1529,7 +1529,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "https://weibo.com/p/100808d4f5092bc0e81c5db9942cfdec21c4b7",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "TAKUTO",
@@ -1548,7 +1548,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 0,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "TOUI",
@@ -1606,7 +1606,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/1008081c4cb6343c1b5e61ffbc23ba6aaec80e/",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "WEN YE CHEN",
@@ -1667,7 +1667,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/10080877e2dd95a2f0b990675515aa433fa57d/",
     star_rank1: 2,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "XUAN HAO",
@@ -1726,7 +1726,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/100808ea7b57ad449860cd1b69bd5685b4b69a/",
     star_rank1: 4,
     star_rank2: 3,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "YOON JONG WOO",
@@ -1746,7 +1746,7 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 3,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "YUKI",
@@ -1823,7 +1823,7 @@ export const traineesData: ITraineeInfo[] = [
       "https://weibo.com/p/1008081a8e8c60823b176b6e9f853e041a5a15/",
     star_rank1: 4,
     star_rank2: 4,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
   {
     name: "ZHANG SHUAI BO",
@@ -1842,6 +1842,6 @@ export const traineesData: ITraineeInfo[] = [
     wb_supertopic: "",
     star_rank1: 1,
     star_rank2: 1,
-    eliminated_ep: undefined,
+    eliminated_ep: -1,
   },
-];
+]

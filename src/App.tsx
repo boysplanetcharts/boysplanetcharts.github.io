@@ -365,7 +365,7 @@ function App() {
                     <b style={{ color: "#5a5a5a" }}>Specialty:</b>{" "}
                     {currentTrainee.good_at}
                   </p>
-                  {currentTrainee.eliminated_ep && (
+                  {currentTrainee.eliminated_ep !== -1 && (
                     <p style={{ fontSize: isMobileOrTablet ? 11 : 16 }}>
                       <b style={{ color: "#5a5a5a" }}>Eliminated in EP:</b>{" "}
                       {currentTrainee.eliminated_ep}
