@@ -4,8 +4,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
-  gap: 3px;
+  padding: 12px;
+  gap: 2px;
 }
 
 .footer_div a {
