@@ -12,7 +12,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 import * as amplitude from "@amplitude/analytics-browser";
 
-const LATEST_EP_WITH_RANKINGS = "ep6";
+const LATEST_EP_WITH_RANKINGS = "ep8";
 
 function getImageUrl(traineeId: number) {
   return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url)
@@ -123,6 +123,8 @@ function App() {
       -1,
       currentTrainee.ep5,
       currentTrainee.ep6,
+      -1,
+      currentTrainee.ep8
     ],
     [currentTrainee]
   );
@@ -418,6 +420,7 @@ function App() {
                   <th>EP 3</th>
                   <th>EP 5</th>
                   <th>EP 6</th>
+                  <th>EP 8</th>
                 </tr>
               </thead>
               <tbody>
@@ -471,6 +474,14 @@ function App() {
                           item.ep5, item.ep6
                         )}
                         <p>{item.ep6 === -1 ? "-" : item.ep6}</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div className="ranking_div">
+                        {generateRankDifference(
+                          item.ep6, item.ep8
+                        )}
+                        <p>{item.ep8 === -1 ? "-" : item.ep8}</p>
                       </div>
                     </td>
                   </tr>
