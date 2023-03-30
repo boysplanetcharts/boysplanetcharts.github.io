@@ -124,7 +124,8 @@ function App() {
       currentTrainee.ep5,
       currentTrainee.ep6,
       -1,
-      currentTrainee.ep8
+      currentTrainee.ep8,
+      currentTrainee.ep9
     ],
     [currentTrainee]
   );
@@ -421,6 +422,7 @@ function App() {
                   <th>EP 5</th>
                   <th>EP 6</th>
                   <th>EP 8</th>
+                  <th>EP 9</th>
                 </tr>
               </thead>
               <tbody>
@@ -482,6 +484,15 @@ function App() {
                           item.ep6, item.ep8
                         )}
                         <p>{item.ep8 === -1 ? "-" : item.ep8}</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div className="ranking_div">
+                        {item.ep9 !== -1 && generateRankDifference(
+                          item.ep8, item.ep9
+                        )}
+                        <p>{item.ep9 === -1 ? "-" : item.ep9}</p>
                       </div>
                     </td>
                   </tr>
