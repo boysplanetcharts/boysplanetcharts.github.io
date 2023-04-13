@@ -12,7 +12,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 import * as amplitude from "@amplitude/analytics-browser";
 
-const LATEST_EP_WITH_RANKINGS = "ep8";
+const LATEST_EP_WITH_RANKINGS = "ep11";
 
 function getImageUrl(traineeId: number) {
   return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url)
@@ -125,7 +125,9 @@ function App() {
       currentTrainee.ep6,
       -1,
       currentTrainee.ep8,
-      currentTrainee.ep9
+      currentTrainee.ep9,
+      -1,
+      currentTrainee.ep11
     ],
     [currentTrainee]
   );
