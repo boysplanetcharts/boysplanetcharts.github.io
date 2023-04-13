@@ -425,6 +425,7 @@ function App() {
                   <th>EP 6</th>
                   <th>EP 8</th>
                   <th>EP 9</th>
+                  <th>EP 11</th>
                 </tr>
               </thead>
               <tbody>
@@ -495,6 +496,14 @@ function App() {
                           item.ep8, item.ep9
                         )}
                         <p>{item.ep9 === -1 ? "-" : item.ep9}</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div className="ranking_div">
+                        {item.ep11 !== -1 && generateRankDifference(
+                          item.ep9 !== -1 ? item.ep9 : item.ep8, item.ep11
+                        )}
+                        <p>{item.ep11 === -1 ? "-" : item.ep11}</p>
                       </div>
                     </td>
                   </tr>

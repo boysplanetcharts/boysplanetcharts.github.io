@@ -117,7 +117,7 @@ export const traineesData: ITraineeInfo[] =   [
     wb_supertopic: "",
     star_rank1: 1,
     star_rank2: 2,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "CHEN JIAN YU",
@@ -167,7 +167,7 @@ export const traineesData: ITraineeInfo[] =   [
       "https://weibo.com/p/100808bc8e8f50a5f6c2aa2595a2842a330775/",
     star_rank1: 4,
     star_rank2: 3,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "CHEN LIANG",
@@ -518,7 +518,7 @@ export const traineesData: ITraineeInfo[] =   [
     wb_supertopic: "",
     star_rank1: 4,
     star_rank2: 4,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "HIROTO",
@@ -542,7 +542,7 @@ export const traineesData: ITraineeInfo[] =   [
       "https://weibo.com/p/10080874a9ff6408bcd1cd51d6831818ff09bb/",
     star_rank1: 2,
     star_rank2: 2,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "HONG KEON HEE",
@@ -1265,7 +1265,7 @@ export const traineesData: ITraineeInfo[] =   [
       "https://weibo.com/p/100808e60f4d7ecab7f6460b6d2157092d61c9/",
     star_rank1: 2,
     star_rank2: 3,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "LEE YE DAM",
@@ -1501,7 +1501,7 @@ export const traineesData: ITraineeInfo[] =   [
       "https://weibo.com/p/100808ec4daaa5111d56ee90f90dd89e018a58/",
     star_rank1: 3,
     star_rank2: 0,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "OSUKE",
@@ -1789,7 +1789,7 @@ export const traineesData: ITraineeInfo[] =   [
       "https://weibo.com/p/10080864c7c6ed9026e7cc8c798f4595b9ef08/",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "SEOK MATTHEW",
@@ -1860,7 +1860,7 @@ export const traineesData: ITraineeInfo[] =   [
     wb_supertopic: "",
     star_rank1: 0,
     star_rank2: 1,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "TOUI",
@@ -1930,7 +1930,7 @@ export const traineesData: ITraineeInfo[] =   [
       "https://weibo.com/p/1008081c4cb6343c1b5e61ffbc23ba6aaec80e/",
     star_rank1: 3,
     star_rank2: 4,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
   {
     name: "WEN YE CHEN",
@@ -2214,6 +2214,6 @@ export const traineesData: ITraineeInfo[] =   [
     wb_supertopic: "",
     star_rank1: 1,
     star_rank2: 1,
-    eliminated_ep: -1,
+    eliminated_ep: 11,
   },
 ]
