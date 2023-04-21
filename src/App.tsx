@@ -50,16 +50,16 @@ function App() {
   const traineesSortedByMostRecentRank = useMemo(() => {
     const ep5eliminatedTrainees = traineesData.filter(
       (trainee) => trainee.ep5 === -1
-    )
+    );
 
-    const ep8eliminatedTrainees = traineesData.filter(
-      (trainee) => trainee.ep8 > 28
-    ).sort((item1, item2) => item1.ep8 - item2.ep8);
+    const ep8eliminatedTrainees = traineesData
+      .filter((trainee) => trainee.ep8 > 28)
+      .sort((item1, item2) => item1.ep8 - item2.ep8);
 
     const ep11eliminatedTrainees = traineesData
       .filter((trainee) => trainee.ep11 > 18)
       .sort((item1, item2) => item1.ep11 - item2.ep11);
-      
+
     const survivedTrainees = traineesData.filter(
       (trainee) => trainee[LATEST_EP_WITH_RANKINGS] !== -1
     );
