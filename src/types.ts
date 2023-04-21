@@ -9,6 +9,7 @@ export interface ITraineeInfo {
   ep8: number;
   ep9: number;
   ep11: number;
+  ep12: number;
   company: string;
   dob: number;
   id: number;

@@ -12,7 +12,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 import * as amplitude from "@amplitude/analytics-browser";
 
-const LATEST_EP_WITH_RANKINGS = "ep11";
+const LATEST_EP_WITH_RANKINGS = "ep12";
 
 function getImageUrl(traineeId: number) {
   return new URL(`./assets/trainees-jpeg/${traineeId}.jpg`, import.meta.url)
@@ -127,7 +127,8 @@ function App() {
       currentTrainee.ep8,
       currentTrainee.ep9,
       -1,
-      currentTrainee.ep11
+      currentTrainee.ep11,
+      currentTrainee.ep12,
     ],
     [currentTrainee]
   );
@@ -426,6 +427,7 @@ function App() {
                   <th>EP 8</th>
                   <th>EP 9</th>
                   <th>EP 11</th>
+                  <th>EP 12</th>
                 </tr>
               </thead>
               <tbody>
@@ -475,35 +477,39 @@ function App() {
 
                     <td>
                       <div className="ranking_div">
-                        {generateRankDifference(
-                          item.ep5, item.ep6
-                        )}
+                        {generateRankDifference(item.ep5, item.ep6)}
                         <p>{item.ep6 === -1 ? "-" : item.ep6}</p>
                       </div>
                     </td>
                     <td>
                       <div className="ranking_div">
-                        {generateRankDifference(
-                          item.ep6, item.ep8
-                        )}
+                        {generateRankDifference(item.ep6, item.ep8)}
                         <p>{item.ep8 === -1 ? "-" : item.ep8}</p>
                       </div>
                     </td>
 
                     <td>
                       <div className="ranking_div">
-                        {item.ep9 !== -1 && generateRankDifference(
-                          item.ep8, item.ep9
-                        )}
+                        {item.ep9 !== -1 &&
+                          generateRankDifference(item.ep8, item.ep9)}
                         <p>{item.ep9 === -1 ? "-" : item.ep9}</p>
                       </div>
                     </td>
                     <td>
                       <div className="ranking_div">
-                        {item.ep11 !== -1 && generateRankDifference(
-                          item.ep9 !== -1 ? item.ep9 : item.ep8, item.ep11
-                        )}
+                        {item.ep11 !== -1 &&
+                          generateRankDifference(
+                            item.ep9 !== -1 ? item.ep9 : item.ep8,
+                            item.ep11
+                          )}
                         <p>{item.ep11 === -1 ? "-" : item.ep11}</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div className="ranking_div">
+                        {item.ep12 !== -1 &&
+                          generateRankDifference(item.ep11, item.ep12)}
+                        <p>{item.ep12 === -1 ? "-" : item.ep12}</p>
                       </div>
                     </td>
                   </tr>
