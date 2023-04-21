@@ -47,7 +47,7 @@ export const RankingChart = ({ rankings, isGlobal }: IRankingChartData) => {
   }, [rankings]);
 
   return (
-    <ResponsiveContainer key={rankings[0]} minWidth={0} height={300}>
+    <ResponsiveContainer key={rankings[0]} minWidth={0} width="100%" height={300}>
       <LineChart
         data={chartData}
         margin={{
@@ -63,15 +63,15 @@ export const RankingChart = ({ rankings, isGlobal }: IRankingChartData) => {
           axisLine={false}
           tickLine={false}
           dataKey="episode"
-          style={{ fontSize: 11 }}
+          style={{ fontSize: 12 }}
         />
         <YAxis domain={[0, 100]} reversed tick={false} axisLine={false} />
         <Line
-          animationDuration={500}
           dataKey="ranking"
           stroke={isGlobal ? "#fb9fcb" : "#7fcaeb"}
           strokeWidth={5}
           dot={CustomizedDot}
+          isAnimationActive={false}
         />
       </LineChart>
     </ResponsiveContainer>
